@@ -1,7 +1,7 @@
   Test script to test different difficulty adjustment algorithms in
 different scenarios.
 
-##Usage
+##Usage##
 
 test_mining.py [-h] [-a algo] [-s scenario] [-r seed] [-n count]
 
