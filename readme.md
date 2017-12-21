@@ -28,3 +28,4 @@ Available scenarios:
    * 'increase': increase network hashrate to given value (2 x initial)
    * 'decrease': decrease network hashrate to given value (0.5 x initial)
    * 'inout': some part of the whole network is in and out periodically
+

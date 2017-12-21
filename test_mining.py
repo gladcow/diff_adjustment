@@ -61,7 +61,7 @@ def target_to_hex(target):
 
 TARGET_1 = bits_to_target(486604799)
 
-TARGET_BLOCK_TIME = 600
+TARGET_BLOCK_TIME = 150
 
 INITIAL_TIMESTAMP = 1503430225
 INITIAL_HASHRATE = 500    # In PH/s.
@@ -621,7 +621,7 @@ Scenarios = {
     'const': Scenario(const_hashrate, {
         'base_rate': INITIAL_HASHRATE
     }),
-    'random_oscillations': Scenario(random_oscillations_hashrate, {
+    'random': Scenario(random_oscillations_hashrate, {
         'base_rate': INITIAL_HASHRATE,
         'amplitude': 0.1
     }),
@@ -690,7 +690,7 @@ def main():
     scenario = Scenarios.get(args.scenario)
     seed = int(time.time()) if args.seed is None else args.seed
 
-    print("Algo %s,  scenarion %s" % (args.algo, args.scenario))
+    print("Algo %s,  scenario %s" % (args.algo, args.scenario))
 
     to_stderr = partial(print, file=sys.stderr)
     to_stderr("Starting seed {} for {} simuls".format(seed, count))
