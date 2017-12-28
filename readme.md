@@ -21,6 +21,7 @@ Available algorithms:
    * 'cdho': based on using critically damped harmonic oscillator
    * 'pid': based on using PID-controller
    * 'sa': "simple align" method (planned block time + last block time = 2 * target block time)
+   * 'pe': 'proportional error' method (error in block time is reduced proportionaly, P-part of PID-controller)
 
 Available scenarios:
    * 'const': constant network hashrate

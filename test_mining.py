@@ -414,21 +414,40 @@ def next_bits_cdho(msg):
     error4 = last_block_time4 - TARGET_BLOCK_TIME
     error5 = last_block_time5 - TARGET_BLOCK_TIME
 
-    error_der1 = (error3 - error1) // (states[-1].wall_time - states[-3].wall_time)
-    error_der2 = (error4 - error2) // (states[-2].wall_time - states[-4].wall_time)
-    error_der3 = (error5 - error3) // (states[-3].wall_time - states[-5].wall_time)
+    error_der1 = (error1 - error3) // (states[-1].wall_time - states[-3].wall_time)
+    error_der2 = (error2 - error4) // (states[-2].wall_time - states[-4].wall_time)
+    error_der3 = (error3 - error5) // (states[-3].wall_time - states[-5].wall_time)
 
-    error_second_der = (error_der3 - error_der1) // (states[-2].wall_time - states[-4].wall_time)
+    error_second_der = (error_der1 - error_der3) // (states[-2].wall_time - states[-4].wall_time)
+
+    D = error_der2 * error_der2 - error3 * error_second_der
 
     if error3:
-        omega = (-error_der2 + math.sqrt(error_der2 * error_der2 - error3 * error_second_der)) // error3
+        omega = (-error_der2 + math.sqrt(D)) // error3
     else:
         omega = 0
 
+    # common solution e = (a + b * t) * exp(-omega*t)
+    a = error3
+    b = error_der2 + omega * error3
+
+    # find next value
+    next_t = TARGET_BLOCK_TIME
+    next_error = (a + b * next_t) * math.exp(-1 * omega * next_t)
+    target_time = TARGET_BLOCK_TIME + next_error
+    if target_time < 1:
+        target_time = 1
+
     prev_target = bits_to_target(states[-1].bits)
 
-    result_target = int(prev_target * (1 - omega))
+    k = last_block_time1 / target_time
 
+    if k < 0.7:
+        k = 0.7
+    if k > 1.3:
+        k = 1.3
+
+    result_target = int(prev_target * k)
     if result_target > MAX_TARGET:
         return MAX_BITS
     return target_to_bits(result_target)
@@ -461,7 +480,35 @@ def next_bits_simple_align(msg):
     if target_time < 1:
         target_time = 1
     prev_target = bits_to_target(states[-1].bits)
-    result_target = int(prev_target * last_block_time // target_time)
+    k = last_block_time / target_time
+
+    if k < 0.7:
+        k = 0.7
+    if k > 1.3:
+        k = 1.3
+
+    result_target = int(prev_target * k)
+    if result_target > MAX_TARGET:
+        return MAX_BITS
+    return target_to_bits(result_target)
+
+
+def next_bits_proportional_error(msg):
+    last_block_time = states[-1].timestamp - states[-2].timestamp
+    if last_block_time < 1:
+        last_block_time = 1
+    target_time = (TARGET_BLOCK_TIME + last_block_time) // 2
+    if target_time < 1:
+        target_time = 1
+    prev_target = bits_to_target(states[-1].bits)
+    k = last_block_time / target_time
+
+    if k < 0.7:
+        k = 0.7
+    if k > 1.3:
+        k = 1.3
+
+    result_target = int(prev_target * k)
     if result_target > MAX_TARGET:
         return MAX_BITS
     return target_to_bits(result_target)
@@ -577,6 +624,8 @@ Algos = {
     }),
     'sa': Algo(next_bits_simple_align, {
     }),
+    'pe': Algo(next_bits_proportional_error, {
+    }),
     'meng-1': Algo(next_bits_m2, {  # mengerian_algo_1
         'window_1': 71,
         'window_2': 137,
@@ -667,6 +716,17 @@ def run_one_simul(algo, scenario, print_it):
     block_times = [simul[n + 1].timestamp - simul[n].timestamp
                    for n in range(len(simul) - 1)]
     return block_times
+
+
+def check_random_times():
+    times = []
+    for i in range(10000):
+        times.append(block_time(TARGET_BLOCK_TIME))
+
+    print("mean=%f" % statistics.mean(times))
+    print("std_dev=%f" % statistics.stdev(times))
+    print("median = %f" % (sorted(times)[len(times) // 2]))
+    print("max = %f" % max(times))
 
 
 def main():
