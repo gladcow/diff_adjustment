@@ -422,7 +422,7 @@ def next_bits_cdho(msg):
 
     D = error_der2 * error_der2 - error3 * error_second_der
 
-    if error3:
+    if error3 and (D > 0):
         omega = (-error_der2 + math.sqrt(D)) // error3
     else:
         omega = 0
@@ -432,13 +432,19 @@ def next_bits_cdho(msg):
     b = error_der2 + omega * error3
 
     # find next value
-    next_t = TARGET_BLOCK_TIME
-    next_error = (a + b * next_t) * math.exp(-1 * omega * next_t)
-    target_time = TARGET_BLOCK_TIME + next_error
-    if target_time < 1:
-        target_time = 1
+    if omega > 0:
+        next_t = states[-1].wall_time + TARGET_BLOCK_TIME
+        next_error = (a + b * next_t) * math.exp(-1 * omega * next_t)
+        target_time = TARGET_BLOCK_TIME + next_error
+        if target_time < 1:
+            target_time = 1
+    else:
+        target_time = TARGET_BLOCK_TIME
 
     prev_target = bits_to_target(states[-1].bits)
+
+    if last_block_time1 > 10 * TARGET_BLOCK_TIME:
+        target_time = TARGET_BLOCK_TIME
 
     k = last_block_time1 / target_time
 
@@ -532,7 +538,10 @@ def block_time(mean_time):
     # Sample the exponential distn
     sample = random.random()
     lmbda = 1 / mean_time
-    return math.log(1 - sample) / -lmbda
+    res = math.log(1 - sample) / -lmbda
+    if res < 1:
+        res = 1
+    return res
 
 
 def next_step(algo, scenario):
