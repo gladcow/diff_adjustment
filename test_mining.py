@@ -499,8 +499,13 @@ def next_bits_simple_align(msg):
     return target_to_bits(result_target)
 
 
-def next_bits_proportional_error(msg):
-    last_block_time = states[-1].timestamp - states[-2].timestamp
+def next_bits_proportional_error(msg, window):
+    last_times = []
+    for state in states[-window:]:
+        last_times.append(state.timestamp)
+    last_times = sorted(last_times)
+    last_block_time = (last_times[-1] - last_times[0]) / (window - 1)
+
     if last_block_time < 1:
         last_block_time = 1
     target_time = (TARGET_BLOCK_TIME + last_block_time) // 2
@@ -508,11 +513,7 @@ def next_bits_proportional_error(msg):
         target_time = 1
     prev_target = bits_to_target(states[-1].bits)
     k = last_block_time / target_time
-
-    if k < 0.7:
-        k = 0.7
-    if k > 1.3:
-        k = 1.3
+    k = (k - 1) / 2 + 1
 
     result_target = int(prev_target * k)
     if result_target > MAX_TARGET:
@@ -634,6 +635,7 @@ Algos = {
     'sa': Algo(next_bits_simple_align, {
     }),
     'pe': Algo(next_bits_proportional_error, {
+        'window': 10
     }),
     'meng-1': Algo(next_bits_m2, {  # mengerian_algo_1
         'window_1': 71,
@@ -744,7 +746,7 @@ def main():
     parser = argparse.ArgumentParser('Run a mining simulation')
     parser.add_argument('-a', '--algo', metavar='algo', type=str,
                         choices=list(Algos.keys()),
-                        default='cdho', help='algorithm choice')
+                        default='pe', help='algorithm choice')
     parser.add_argument('-s', '--scenario', metavar='scenario', type=str,
                         choices=list(Scenarios.keys()),
                         default='const', help='scenario choice')
