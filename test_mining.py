@@ -76,6 +76,9 @@ State = namedtuple('State', 'height wall_time timestamp bits chainwork '
 states = []
 
 
+integral = 0
+
+
 def print_headers():
     print(', '.join(['Height', 'Block Time', 'Unix', 'Timestamp',
                      'Difficulty (bn)', 'Implied Difficulty (bn)',
@@ -459,23 +462,17 @@ def next_bits_cdho(msg):
     return target_to_bits(result_target)
 
 
-class PidController:
-    def __init__(self):
-        self.bits = INITIAL_DASH_BITS
-
-    def update(self):
-        self.bits = states[-1].bits
-
-    def get_retarget_output(self):
-        return self.bits
-
-
-pid_controller = PidController()
-
-
 def next_bits_pid(msg):
-    pid_controller.update()
-    return pid_controller.get_retarget_output()
+    global integral
+    proportional = ((states[-1].timestamp - states[-2].timestamp) - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
+    integral = integral + proportional
+    c = 100 * proportional + integral
+    k = 1 + c * 0.0001
+    prev_target = bits_to_target(states[-1].bits)
+    result_target = int(prev_target * k)
+    if result_target > MAX_TARGET:
+        return MAX_BITS
+    return target_to_bits(result_target)
 
 
 def next_bits_simple_align(msg):
@@ -746,7 +743,7 @@ def main():
     parser = argparse.ArgumentParser('Run a mining simulation')
     parser.add_argument('-a', '--algo', metavar='algo', type=str,
                         choices=list(Algos.keys()),
-                        default='pe', help='algorithm choice')
+                        default='pid', help='algorithm choice')
     parser.add_argument('-s', '--scenario', metavar='scenario', type=str,
                         choices=list(Scenarios.keys()),
                         default='const', help='scenario choice')
