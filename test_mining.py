@@ -471,11 +471,13 @@ pid_integral_error = 0
 
 def next_bits_pid(msg):
     global pid_integral_error
-    space_error = ((states[-1].timestamp - states[-2].timestamp) - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
+    window = 24
+    avg_error = ((states[-1].timestamp - states[-1 - window].timestamp) / window - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
+    space_error = ((states[-1].timestamp - states[-2].timestamp)  - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
     prev_space_error = ((states[-2].timestamp - states[-3].timestamp) - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
     error_rate = space_error - prev_space_error
     pid_integral_error = pid_integral_error + integral_step_weight * space_error
-    control = pid_proportional_gain * space_error + \
+    control = pid_proportional_gain * avg_error + \
         pid_integral_gain * pid_integral_error + \
         pid_diffirential_gain * error_rate
     k = 1 + control * control_weight
