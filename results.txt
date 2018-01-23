@@ -1,824 +1,270 @@
-Starting seed 1514469935 for 10 simuls
-Mean   block time(s) Range 151.0-151.2 Mean 151.1 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 154.4-160.9 Mean 157.8 Std Dev 2.5 Median 158.7
-Median block time(s) Range 100.0-105.0 Mean 102.4 Std Dev 1.6 Median 102.0
-Max    block time(s) Range 1481.0-1835.0 Mean 1647.1 Std Dev 121.2 Median 1628.0
+Starting seed 1516709194 for 10 simuls
+Mean   block time(s) Range 151.0-151.1 Mean 151.1 Std Dev 0.1 Median 151.1
+StdDev block time(s) Range 155.2-160.5 Mean 158.4 Std Dev 1.5 Median 158.9
+Median block time(s) Range 100.0-102.0 Mean 101.2 Std Dev 0.8 Median 101.0
+Max    block time(s) Range 1431.0-2826.0 Mean 1817.1 Std Dev 390.2 Median 1767.0
 Algo cdgw3-24,  scenario const
-Starting seed 1514469939 for 10 simuls
-Mean   block time(s) Range 150.0-150.4 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 149.1-153.4 Mean 151.2 Std Dev 1.7 Median 151.6
-Median block time(s) Range 102.0-107.0 Mean 103.6 Std Dev 1.8 Median 103.0
-Max    block time(s) Range 1268.0-2054.0 Mean 1494.6 Std Dev 278.2 Median 1418.0
+Starting seed 1516709199 for 10 simuls
+Mean   block time(s) Range 149.9-150.4 Mean 150.1 Std Dev 0.1 Median 150.2
+StdDev block time(s) Range 149.1-153.2 Mean 151.1 Std Dev 1.4 Median 151.6
+Median block time(s) Range 102.0-104.0 Mean 103.3 Std Dev 0.9 Median 104.0
+Max    block time(s) Range 1200.0-1728.0 Mean 1469.4 Std Dev 197.1 Median 1480.0
 Algo cdgw3-144,  scenario const
-Starting seed 1514469959 for 10 simuls
-Mean   block time(s) Range 151.0-151.4 Mean 151.2 Std Dev 0.1 Median 151.2
-StdDev block time(s) Range 155.3-161.9 Mean 158.2 Std Dev 1.9 Median 157.8
-Median block time(s) Range 100.0-103.0 Mean 101.3 Std Dev 0.8 Median 101.0
-Max    block time(s) Range 1290.0-2529.0 Mean 1788.8 Std Dev 367.4 Median 1745.0
-Algo fdgw3-24,  scenario const
-Starting seed 1514469964 for 10 simuls
-Mean   block time(s) Range 150.0-150.3 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 149.2-153.5 Mean 150.6 Std Dev 1.2 Median 150.7
-Median block time(s) Range 102.0-105.0 Mean 104.0 Std Dev 0.9 Median 104.0
-Max    block time(s) Range 1250.0-1678.0 Mean 1423.2 Std Dev 131.8 Median 1422.0
-Algo fdgw3-144,  scenario const
-Starting seed 1514469982 for 10 simuls
-Mean   block time(s) Range 150.2-151.0 Mean 150.5 Std Dev 0.3 Median 150.5
-StdDev block time(s) Range 149.2-154.6 Mean 151.9 Std Dev 1.8 Median 151.6
-Median block time(s) Range 101.0-106.0 Mean 103.7 Std Dev 1.4 Median 104.0
-Max    block time(s) Range 1350.0-1801.0 Mean 1566.6 Std Dev 161.1 Median 1625.0
-Algo xmr,  scenario const
-Starting seed 1514470073 for 10 simuls
-Algo cdho,  scenario const
-Traceback (most recent call last):
-  File "./test_mining.py", line 789, in <module>
-    main()
-  File "./test_mining.py", line 765, in main
-    block_times = run_one_simul(algo, scenario, count == 1)
-  File "./test_mining.py", line 709, in run_one_simul
-    next_step(algo, scenario)
-  File "./test_mining.py", line 543, in next_step
-    bits = algo.next_bits(msg, **algo.params)
-  File "./test_mining.py", line 453, in next_bits_cdho
-    return target_to_bits(result_target)
-  File "./test_mining.py", line 32, in target_to_bits
-    assert target > 0
-AssertionError
-Starting seed 1514470073 for 10 simuls
-Mean   block time(s) Range 146.9-151.8 Mean 149.8 Std Dev 1.4 Median 150.6
-StdDev block time(s) Range 146.0-151.6 Mean 149.8 Std Dev 1.9 Median 151.0
-Median block time(s) Range 100.0-107.0 Mean 103.6 Std Dev 2.2 Median 104.0
-Max    block time(s) Range 1279.0-2044.0 Mean 1571.0 Std Dev 221.4 Median 1516.0
-Algo pid,  scenario const
-Starting seed 1514470074 for 10 simuls
-Mean   block time(s) Range 305.9-321.1 Mean 314.4 Std Dev 5.8 Median 318.4
-StdDev block time(s) Range 375.9-416.7 Mean 395.4 Std Dev 16.1 Median 401.1
-Median block time(s) Range 184.0-189.0 Mean 186.5 Std Dev 1.6 Median 187.0
-Max    block time(s) Range 4832.0-12285.0 Mean 6819.1 Std Dev 2148.2 Median 6525.0
-Algo sa,  scenario const
-Starting seed 1514470076 for 10 simuls
-Mean   block time(s) Range 150.9-151.2 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 155.7-160.4 Mean 158.2 Std Dev 1.7 Median 158.1
-Median block time(s) Range 100.0-103.0 Mean 101.5 Std Dev 1.1 Median 102.0
-Max    block time(s) Range 1410.0-2874.0 Mean 1943.2 Std Dev 535.7 Median 1830.0
-Algo cdgw3-24,  scenario random
-Starting seed 1514470081 for 10 simuls
-Mean   block time(s) Range 150.1-150.3 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 149.4-154.0 Mean 151.4 Std Dev 1.4 Median 152.1
-Median block time(s) Range 102.0-105.0 Mean 103.5 Std Dev 1.3 Median 104.0
-Max    block time(s) Range 1316.0-1780.0 Mean 1532.2 Std Dev 143.9 Median 1516.0
-Algo cdgw3-144,  scenario random
-Starting seed 1514470100 for 10 simuls
-Mean   block time(s) Range 151.1-151.3 Mean 151.2 Std Dev 0.1 Median 151.2
-StdDev block time(s) Range 155.3-164.3 Mean 158.7 Std Dev 2.4 Median 158.5
-Median block time(s) Range 100.0-104.0 Mean 102.1 Std Dev 1.2 Median 102.0
-Max    block time(s) Range 1493.0-3360.0 Mean 2085.7 Std Dev 498.7 Median 2029.0
-Algo fdgw3-24,  scenario random
-Starting seed 1514470105 for 10 simuls
-Mean   block time(s) Range 150.0-150.5 Mean 150.2 Std Dev 0.1 Median 150.3
-StdDev block time(s) Range 149.9-154.5 Mean 151.8 Std Dev 1.6 Median 151.3
-Median block time(s) Range 102.0-106.0 Mean 103.8 Std Dev 1.3 Median 104.0
-Max    block time(s) Range 1203.0-1822.0 Mean 1564.0 Std Dev 168.6 Median 1594.0
-Algo fdgw3-144,  scenario random
-Starting seed 1514470125 for 10 simuls
-Mean   block time(s) Range 150.0-150.7 Mean 150.4 Std Dev 0.3 Median 150.6
-StdDev block time(s) Range 148.1-151.9 Mean 150.2 Std Dev 1.1 Median 150.6
-Median block time(s) Range 101.0-105.0 Mean 103.8 Std Dev 1.1 Median 104.0
-Max    block time(s) Range 1131.0-1559.0 Mean 1325.7 Std Dev 148.4 Median 1388.0
-Algo xmr,  scenario random
-Starting seed 1514470216 for 10 simuls
-Algo cdho,  scenario random
-Traceback (most recent call last):
-  File "./test_mining.py", line 789, in <module>
-    main()
-  File "./test_mining.py", line 765, in main
-    block_times = run_one_simul(algo, scenario, count == 1)
-  File "./test_mining.py", line 709, in run_one_simul
-    next_step(algo, scenario)
-  File "./test_mining.py", line 543, in next_step
-    bits = algo.next_bits(msg, **algo.params)
-  File "./test_mining.py", line 426, in next_bits_cdho
-    omega = (-error_der2 + math.sqrt(D)) // error3
-ValueError: math domain error
-Starting seed 1514470216 for 10 simuls
-Mean   block time(s) Range 147.5-155.0 Mean 150.7 Std Dev 2.0 Median 150.4
-StdDev block time(s) Range 145.5-152.3 Mean 150.2 Std Dev 2.0 Median 150.3
-Median block time(s) Range 101.0-109.0 Mean 104.4 Std Dev 2.2 Median 105.0
-Max    block time(s) Range 1346.0-1794.0 Mean 1473.8 Std Dev 155.1 Median 1419.0
-Algo pid,  scenario random
-Starting seed 1514470218 for 10 simuls
-Mean   block time(s) Range 311.8-322.9 Mean 315.5 Std Dev 3.3 Median 315.0
-StdDev block time(s) Range 378.7-433.5 Mean 397.9 Std Dev 15.9 Median 399.5
-Median block time(s) Range 184.0-189.0 Mean 186.5 Std Dev 1.6 Median 187.0
-Max    block time(s) Range 4610.0-8205.0 Mean 5991.3 Std Dev 1102.0 Median 5957.0
-Algo sa,  scenario random
-Starting seed 1514470219 for 10 simuls
-Mean   block time(s) Range 150.9-151.1 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 154.5-162.8 Mean 159.1 Std Dev 2.4 Median 159.8
-Median block time(s) Range 99.0-103.0 Mean 101.2 Std Dev 1.3 Median 101.0
-Max    block time(s) Range 1327.0-2365.0 Mean 1834.1 Std Dev 287.4 Median 1801.0
-Algo cdgw3-24,  scenario increase
-Starting seed 1514470224 for 10 simuls
-Mean   block time(s) Range 149.4-149.7 Mean 149.5 Std Dev 0.1 Median 149.5
-StdDev block time(s) Range 147.0-154.2 Mean 150.8 Std Dev 2.1 Median 151.1
-Median block time(s) Range 101.0-105.0 Mean 102.4 Std Dev 1.2 Median 102.0
-Max    block time(s) Range 1091.0-1691.0 Mean 1440.8 Std Dev 200.3 Median 1499.0
-Algo cdgw3-144,  scenario increase
-Starting seed 1514470243 for 10 simuls
-Mean   block time(s) Range 151.0-151.2 Mean 151.1 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 155.8-159.6 Mean 157.1 Std Dev 1.3 Median 156.7
-Median block time(s) Range 100.0-104.0 Mean 102.1 Std Dev 1.2 Median 102.0
-Max    block time(s) Range 1476.0-2695.0 Mean 1853.9 Std Dev 392.2 Median 1690.0
-Algo fdgw3-24,  scenario increase
-Starting seed 1514470247 for 10 simuls
-Mean   block time(s) Range 149.3-149.7 Mean 149.5 Std Dev 0.1 Median 149.5
-StdDev block time(s) Range 148.6-153.3 Mean 150.4 Std Dev 1.5 Median 150.6
-Median block time(s) Range 101.0-105.0 Mean 103.2 Std Dev 1.1 Median 103.0
-Max    block time(s) Range 1291.0-1846.0 Mean 1531.8 Std Dev 234.1 Median 1501.0
-Algo fdgw3-144,  scenario increase
-Starting seed 1514470266 for 10 simuls
-Mean   block time(s) Range 146.8-147.7 Mean 147.4 Std Dev 0.2 Median 147.5
-StdDev block time(s) Range 146.2-151.8 Mean 148.8 Std Dev 1.8 Median 149.3
-Median block time(s) Range 100.0-103.0 Mean 101.5 Std Dev 1.1 Median 102.0
-Max    block time(s) Range 1154.0-1940.0 Mean 1476.4 Std Dev 219.4 Median 1480.0
-Algo xmr,  scenario increase
-Starting seed 1514470355 for 10 simuls
-Algo cdho,  scenario increase
-Traceback (most recent call last):
-  File "./test_mining.py", line 789, in <module>
-    main()
-  File "./test_mining.py", line 765, in main
-    block_times = run_one_simul(algo, scenario, count == 1)
-  File "./test_mining.py", line 709, in run_one_simul
-    next_step(algo, scenario)
-  File "./test_mining.py", line 543, in next_step
-    bits = algo.next_bits(msg, **algo.params)
-  File "./test_mining.py", line 426, in next_bits_cdho
-    omega = (-error_der2 + math.sqrt(D)) // error3
-ValueError: math domain error
-Starting seed 1514470355 for 10 simuls
-Mean   block time(s) Range 73.7-76.3 Mean 75.0 Std Dev 0.9 Median 75.2
-StdDev block time(s) Range 73.0-76.8 Mean 74.6 Std Dev 1.3 Median 74.3
-Median block time(s) Range 51.0-53.0 Mean 51.9 Std Dev 0.7 Median 52.0
-Max    block time(s) Range 584.0-782.0 Mean 687.7 Std Dev 57.3 Median 677.0
-Algo pid,  scenario increase
-Starting seed 1514470356 for 10 simuls
-Mean   block time(s) Range 308.1-319.6 Mean 315.4 Std Dev 3.6 Median 316.0
-StdDev block time(s) Range 378.3-407.3 Mean 393.9 Std Dev 10.2 Median 393.2
-Median block time(s) Range 184.0-189.0 Mean 186.6 Std Dev 1.6 Median 187.0
-Max    block time(s) Range 4583.0-9842.0 Mean 6245.0 Std Dev 1767.5 Median 6428.0
-Algo sa,  scenario increase
-Starting seed 1514470358 for 10 simuls
-Mean   block time(s) Range 151.0-151.4 Mean 151.2 Std Dev 0.1 Median 151.2
-StdDev block time(s) Range 154.5-160.6 Mean 158.3 Std Dev 2.0 Median 158.6
-Median block time(s) Range 100.0-103.0 Mean 101.4 Std Dev 0.8 Median 101.0
-Max    block time(s) Range 1343.0-2265.0 Mean 1812.4 Std Dev 305.5 Median 1925.0
-Algo cdgw3-24,  scenario decrease
-Starting seed 1514470363 for 10 simuls
-Mean   block time(s) Range 150.9-151.1 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 150.6-154.5 Mean 152.0 Std Dev 1.3 Median 152.2
-Median block time(s) Range 103.0-106.0 Mean 104.1 Std Dev 1.0 Median 104.0
-Max    block time(s) Range 1310.0-2190.0 Mean 1537.0 Std Dev 250.8 Median 1480.0
-Algo cdgw3-144,  scenario decrease
-Starting seed 1514470382 for 10 simuls
-Mean   block time(s) Range 151.3-151.5 Mean 151.3 Std Dev 0.1 Median 151.3
-StdDev block time(s) Range 155.6-159.7 Mean 157.9 Std Dev 1.2 Median 157.9
-Median block time(s) Range 100.0-103.0 Mean 101.9 Std Dev 1.1 Median 102.0
-Max    block time(s) Range 1569.0-2111.0 Mean 1771.8 Std Dev 179.3 Median 1729.0
-Algo fdgw3-24,  scenario decrease
-Starting seed 1514470387 for 10 simuls
-Mean   block time(s) Range 150.9-151.2 Mean 151.0 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 149.6-154.0 Mean 152.1 Std Dev 1.2 Median 152.3
-Median block time(s) Range 102.0-106.0 Mean 104.4 Std Dev 1.3 Median 105.0
-Max    block time(s) Range 1343.0-2234.0 Mean 1536.6 Std Dev 254.3 Median 1462.0
-Algo fdgw3-144,  scenario decrease
-Starting seed 1514470406 for 10 simuls
-Mean   block time(s) Range 154.8-155.5 Mean 155.1 Std Dev 0.2 Median 155.2
-StdDev block time(s) Range 155.2-162.9 Mean 158.7 Std Dev 2.5 Median 159.1
-Median block time(s) Range 105.0-108.0 Mean 106.3 Std Dev 1.3 Median 106.0
-Max    block time(s) Range 1558.0-2322.0 Mean 1795.3 Std Dev 207.1 Median 1751.0
-Algo xmr,  scenario decrease
-Starting seed 1514470495 for 10 simuls
-Algo cdho,  scenario decrease
-Traceback (most recent call last):
-  File "./test_mining.py", line 789, in <module>
-    main()
-  File "./test_mining.py", line 765, in main
-    block_times = run_one_simul(algo, scenario, count == 1)
-  File "./test_mining.py", line 709, in run_one_simul
-    next_step(algo, scenario)
-  File "./test_mining.py", line 543, in next_step
-    bits = algo.next_bits(msg, **algo.params)
-  File "./test_mining.py", line 453, in next_bits_cdho
-    return target_to_bits(result_target)
-  File "./test_mining.py", line 32, in target_to_bits
-    assert target > 0
-AssertionError
-Starting seed 1514470495 for 10 simuls
-Mean   block time(s) Range 297.7-307.5 Mean 301.1 Std Dev 3.4 Median 300.6
-StdDev block time(s) Range 295.5-307.0 Mean 301.4 Std Dev 3.8 Median 301.3
-Median block time(s) Range 204.0-213.0 Mean 208.3 Std Dev 2.9 Median 208.0
-Max    block time(s) Range 2587.0-3535.0 Mean 2972.5 Std Dev 364.0 Median 2961.0
-Algo pid,  scenario decrease
-Starting seed 1514470497 for 10 simuls
-Mean   block time(s) Range 308.6-322.0 Mean 316.6 Std Dev 3.7 Median 317.8
-StdDev block time(s) Range 381.4-440.5 Mean 404.7 Std Dev 17.1 Median 409.1
-Median block time(s) Range 184.0-190.0 Mean 186.9 Std Dev 1.9 Median 187.0
-Max    block time(s) Range 4541.0-11154.0 Mean 7393.5 Std Dev 2127.4 Median 6990.0
-Algo sa,  scenario decrease
-Starting seed 1514470499 for 10 simuls
-Mean   block time(s) Range 151.8-152.3 Mean 152.0 Std Dev 0.1 Median 152.0
-StdDev block time(s) Range 162.9-168.5 Mean 165.7 Std Dev 1.7 Median 166.4
-Median block time(s) Range 99.0-101.0 Mean 99.9 Std Dev 0.6 Median 100.0
-Max    block time(s) Range 1761.0-2864.0 Mean 2123.5 Std Dev 342.3 Median 2022.0
-Algo cdgw3-24,  scenario inout
-Starting seed 1514470503 for 10 simuls
-Mean   block time(s) Range 150.3-150.8 Mean 150.6 Std Dev 0.2 Median 150.7
-StdDev block time(s) Range 169.2-176.8 Mean 172.6 Std Dev 2.4 Median 172.0
-Median block time(s) Range 92.0-95.0 Mean 93.3 Std Dev 1.1 Median 93.0
-Max    block time(s) Range 1608.0-2150.0 Mean 1879.7 Std Dev 219.3 Median 1979.0
-Algo cdgw3-144,  scenario inout
-Starting seed 1514470522 for 10 simuls
-Mean   block time(s) Range 152.1-152.5 Mean 152.3 Std Dev 0.1 Median 152.3
-StdDev block time(s) Range 162.7-167.7 Mean 166.1 Std Dev 1.9 Median 167.4
-Median block time(s) Range 98.0-102.0 Mean 99.2 Std Dev 1.2 Median 99.0
-Max    block time(s) Range 1660.0-2391.0 Mean 2016.7 Std Dev 255.7 Median 2116.0
-Algo fdgw3-24,  scenario inout
-Starting seed 1514470527 for 10 simuls
-Mean   block time(s) Range 150.3-150.7 Mean 150.5 Std Dev 0.1 Median 150.5
-StdDev block time(s) Range 171.5-178.3 Mean 174.0 Std Dev 2.0 Median 173.9
-Median block time(s) Range 92.0-94.0 Mean 93.0 Std Dev 0.8 Median 93.0
-Max    block time(s) Range 1542.0-2640.0 Mean 2132.7 Std Dev 304.0 Median 2212.0
-Algo fdgw3-144,  scenario inout
-Starting seed 1514470546 for 10 simuls
-Mean   block time(s) Range 148.8-149.6 Mean 149.3 Std Dev 0.2 Median 149.4
-StdDev block time(s) Range 163.0-172.1 Mean 165.3 Std Dev 2.6 Median 164.8
-Median block time(s) Range 94.0-98.0 Mean 96.2 Std Dev 1.1 Median 96.0
-Max    block time(s) Range 1666.0-2607.0 Mean 2025.7 Std Dev 332.6 Median 1983.0
-Algo xmr,  scenario inout
-Starting seed 1514470635 for 10 simuls
-Algo cdho,  scenario inout
-Traceback (most recent call last):
-  File "./test_mining.py", line 789, in <module>
-    main()
-  File "./test_mining.py", line 765, in main
-    block_times = run_one_simul(algo, scenario, count == 1)
-  File "./test_mining.py", line 709, in run_one_simul
-    next_step(algo, scenario)
-  File "./test_mining.py", line 543, in next_step
-    bits = algo.next_bits(msg, **algo.params)
-  File "./test_mining.py", line 426, in next_bits_cdho
-    omega = (-error_der2 + math.sqrt(D)) // error3
-ValueError: math domain error
-Starting seed 1514470635 for 10 simuls
-Mean   block time(s) Range 109.7-114.1 Mean 112.6 Std Dev 1.2 Median 112.9
-StdDev block time(s) Range 120.8-126.3 Mean 124.1 Std Dev 1.8 Median 124.4
-Median block time(s) Range 71.0-75.0 Mean 72.5 Std Dev 1.2 Median 72.0
-Max    block time(s) Range 1249.0-1752.0 Mean 1416.6 Std Dev 183.7 Median 1394.0
-Algo pid,  scenario inout
-Starting seed 1514470637 for 10 simuls
-Mean   block time(s) Range 311.1-324.4 Mean 318.2 Std Dev 4.4 Median 319.2
-StdDev block time(s) Range 396.7-427.2 Mean 412.0 Std Dev 11.6 Median 413.6
-Median block time(s) Range 185.0-188.0 Mean 186.2 Std Dev 1.0 Median 186.0
-Max    block time(s) Range 4799.0-9093.0 Mean 7251.6 Std Dev 1159.8 Median 7408.0
-Algo sa,  scenario inout
-Starting seed 1515508764 for 10 simuls
-Mean   block time(s) Range 150.9-151.2 Mean 151.1 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 155.9-159.9 Mean 158.1 Std Dev 1.4 Median 158.1
-Median block time(s) Range 100.0-103.0 Mean 101.4 Std Dev 1.0 Median 102.0
-Max    block time(s) Range 1431.0-1804.0 Mean 1596.8 Std Dev 145.7 Median 1557.0
-Algo cdgw3-24,  scenario const
-Starting seed 1515508769 for 10 simuls
-Mean   block time(s) Range 149.9-150.4 Mean 150.1 Std Dev 0.2 Median 150.1
-StdDev block time(s) Range 147.9-153.0 Mean 150.7 Std Dev 1.7 Median 151.4
-Median block time(s) Range 102.0-107.0 Mean 103.8 Std Dev 1.5 Median 104.0
-Max    block time(s) Range 1161.0-1477.0 Mean 1340.6 Std Dev 90.8 Median 1354.0
-Algo cdgw3-144,  scenario const
-Starting seed 1515508788 for 10 simuls
-Mean   block time(s) Range 151.0-151.2 Mean 151.1 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 154.5-161.8 Mean 158.3 Std Dev 2.5 Median 159.1
-Median block time(s) Range 100.0-105.0 Mean 101.9 Std Dev 1.4 Median 102.0
-Max    block time(s) Range 1424.0-2235.0 Mean 1756.7 Std Dev 262.9 Median 1698.0
-Algo fdgw3-24,  scenario const
-Starting seed 1515508793 for 10 simuls
-Mean   block time(s) Range 149.9-150.3 Mean 150.1 Std Dev 0.1 Median 150.1
-StdDev block time(s) Range 148.5-153.5 Mean 151.4 Std Dev 1.8 Median 151.4
-Median block time(s) Range 102.0-107.0 Mean 104.0 Std Dev 1.4 Median 104.0
-Max    block time(s) Range 1383.0-1849.0 Mean 1587.6 Std Dev 160.1 Median 1673.0
-Algo fdgw3-144,  scenario const
-Starting seed 1515508812 for 10 simuls
-Mean   block time(s) Range 150.2-150.7 Mean 150.4 Std Dev 0.2 Median 150.5
-StdDev block time(s) Range 148.5-153.3 Mean 150.4 Std Dev 1.5 Median 150.3
-Median block time(s) Range 102.0-106.0 Mean 104.5 Std Dev 1.1 Median 105.0
-Max    block time(s) Range 1358.0-1958.0 Mean 1526.5 Std Dev 186.3 Median 1473.0
-Algo xmr,  scenario const
-Starting seed 1515508904 for 10 simuls
-Mean   block time(s) Range 301.7-312.0 Mean 307.5 Std Dev 3.6 Median 307.7
-StdDev block time(s) Range 359.0-394.4 Mean 379.1 Std Dev 9.7 Median 382.3
-Median block time(s) Range 182.0-185.0 Mean 183.7 Std Dev 1.1 Median 184.0
-Max    block time(s) Range 4594.0-7177.0 Mean 5956.8 Std Dev 757.2 Median 6121.0
-Algo cdho,  scenario const
-Starting seed 1515508906 for 10 simuls
-Mean   block time(s) Range 147.1-151.9 Mean 149.7 Std Dev 1.6 Median 150.3
-StdDev block time(s) Range 143.9-151.3 Mean 149.2 Std Dev 2.2 Median 149.6
-Median block time(s) Range 101.0-106.0 Mean 103.9 Std Dev 1.9 Median 104.0
-Max    block time(s) Range 1365.0-1964.0 Mean 1558.1 Std Dev 191.8 Median 1533.0
-Algo pid,  scenario const
-Starting seed 1515508907 for 10 simuls
-Mean   block time(s) Range 311.0-319.5 Mean 315.3 Std Dev 3.5 Median 314.9
-StdDev block time(s) Range 380.4-409.3 Mean 393.7 Std Dev 8.4 Median 394.9
-Median block time(s) Range 185.0-189.0 Mean 187.0 Std Dev 1.4 Median 187.0
-Max    block time(s) Range 4649.0-8241.0 Mean 6079.9 Std Dev 1157.8 Median 6616.0
-Algo sa,  scenario const
-Starting seed 1515508909 for 10 simuls
-Mean   block time(s) Range 296.5-304.6 Mean 301.2 Std Dev 2.8 Median 302.6
-StdDev block time(s) Range 347.4-380.0 Mean 362.5 Std Dev 9.2 Median 364.3
-Median block time(s) Range 181.0-186.0 Mean 183.0 Std Dev 1.6 Median 183.0
-Max    block time(s) Range 3743.0-7503.0 Mean 5386.5 Std Dev 1212.5 Median 5492.0
-Algo pe,  scenario const
-Starting seed 1515508911 for 10 simuls
-Mean   block time(s) Range 150.9-151.2 Mean 151.0 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 154.1-161.5 Mean 156.8 Std Dev 2.5 Median 156.4
-Median block time(s) Range 100.0-103.0 Mean 101.9 Std Dev 1.0 Median 102.0
-Max    block time(s) Range 1247.0-2276.0 Mean 1787.1 Std Dev 309.9 Median 1826.0
-Algo cdgw3-24,  scenario random
-Starting seed 1515508916 for 10 simuls
-Mean   block time(s) Range 150.0-150.4 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 148.1-153.2 Mean 150.5 Std Dev 1.8 Median 150.5
-Median block time(s) Range 103.0-106.0 Mean 104.7 Std Dev 1.1 Median 105.0
-Max    block time(s) Range 1190.0-1716.0 Mean 1439.3 Std Dev 161.1 Median 1500.0
-Algo cdgw3-144,  scenario random
-Starting seed 1515508936 for 10 simuls
-Mean   block time(s) Range 151.1-151.3 Mean 151.2 Std Dev 0.1 Median 151.2
-StdDev block time(s) Range 156.2-161.3 Mean 158.5 Std Dev 1.7 Median 158.1
-Median block time(s) Range 100.0-104.0 Mean 101.8 Std Dev 1.2 Median 102.0
-Max    block time(s) Range 1440.0-2121.0 Mean 1706.0 Std Dev 207.6 Median 1716.0
-Algo fdgw3-24,  scenario random
-Starting seed 1515508940 for 10 simuls
-Mean   block time(s) Range 150.1-150.3 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 150.5-154.5 Mean 152.3 Std Dev 1.4 Median 152.4
-Median block time(s) Range 102.0-105.0 Mean 103.8 Std Dev 1.0 Median 104.0
-Max    block time(s) Range 1318.0-1987.0 Mean 1595.1 Std Dev 206.0 Median 1623.0
-Algo fdgw3-144,  scenario random
-Starting seed 1515508960 for 10 simuls
-Mean   block time(s) Range 150.1-150.7 Mean 150.4 Std Dev 0.2 Median 150.4
-StdDev block time(s) Range 148.5-154.3 Mean 150.4 Std Dev 1.7 Median 150.7
-Median block time(s) Range 104.0-107.0 Mean 104.6 Std Dev 1.0 Median 104.0
-Max    block time(s) Range 1206.0-1787.0 Mean 1428.5 Std Dev 162.3 Median 1416.0
-Algo xmr,  scenario random
-Starting seed 1515509052 for 10 simuls
-Mean   block time(s) Range 301.3-314.2 Mean 307.7 Std Dev 4.2 Median 306.5
-StdDev block time(s) Range 367.5-397.7 Mean 381.7 Std Dev 10.8 Median 379.3
-Median block time(s) Range 181.0-185.0 Mean 183.7 Std Dev 1.3 Median 184.0
-Max    block time(s) Range 4161.0-9370.0 Mean 6357.2 Std Dev 1557.1 Median 6021.0
-Algo cdho,  scenario random
-Starting seed 1515509054 for 10 simuls
-Mean   block time(s) Range 148.1-151.4 Mean 150.1 Std Dev 1.0 Median 150.3
-StdDev block time(s) Range 148.6-151.7 Mean 150.2 Std Dev 1.0 Median 150.1
-Median block time(s) Range 101.0-107.0 Mean 104.0 Std Dev 1.8 Median 104.0
-Max    block time(s) Range 1209.0-2219.0 Mean 1561.0 Std Dev 298.4 Median 1472.0
-Algo pid,  scenario random
-Starting seed 1515509056 for 10 simuls
-Mean   block time(s) Range 311.1-322.2 Mean 316.2 Std Dev 3.9 Median 315.8
-StdDev block time(s) Range 383.2-412.5 Mean 397.6 Std Dev 10.6 Median 395.8
-Median block time(s) Range 185.0-190.0 Mean 187.0 Std Dev 1.7 Median 187.0
-Max    block time(s) Range 5220.0-8335.0 Mean 6593.5 Std Dev 915.7 Median 6847.0
-Algo sa,  scenario random
-Starting seed 1515509058 for 10 simuls
-Mean   block time(s) Range 294.5-307.3 Mean 300.0 Std Dev 3.7 Median 300.1
-StdDev block time(s) Range 347.9-383.4 Mean 363.8 Std Dev 10.2 Median 366.1
-Median block time(s) Range 181.0-185.0 Mean 182.7 Std Dev 1.2 Median 183.0
-Max    block time(s) Range 4677.0-7193.0 Mean 5773.8 Std Dev 730.4 Median 5721.0
-Algo pe,  scenario random
-Starting seed 1515509059 for 10 simuls
-Mean   block time(s) Range 150.9-151.1 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 152.6-160.7 Mean 157.4 Std Dev 2.7 Median 158.6
-Median block time(s) Range 100.0-103.0 Mean 101.7 Std Dev 1.2 Median 102.0
-Max    block time(s) Range 1316.0-2378.0 Mean 1778.5 Std Dev 409.4 Median 1831.0
-Algo cdgw3-24,  scenario increase
-Starting seed 1515509064 for 10 simuls
-Mean   block time(s) Range 149.4-149.6 Mean 149.5 Std Dev 0.1 Median 149.5
-StdDev block time(s) Range 147.2-153.2 Mean 150.3 Std Dev 1.7 Median 150.2
-Median block time(s) Range 102.0-105.0 Mean 103.5 Std Dev 0.8 Median 104.0
-Max    block time(s) Range 1272.0-2026.0 Mean 1611.2 Std Dev 274.3 Median 1546.0
-Algo cdgw3-144,  scenario increase
-Starting seed 1515509085 for 10 simuls
-Mean   block time(s) Range 150.9-151.2 Mean 151.1 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 155.3-160.1 Mean 158.0 Std Dev 1.7 Median 158.7
-Median block time(s) Range 101.0-103.0 Mean 102.2 Std Dev 0.9 Median 103.0
-Max    block time(s) Range 1349.0-1782.0 Mean 1637.7 Std Dev 158.4 Median 1745.0
-Algo fdgw3-24,  scenario increase
-Starting seed 1515509090 for 10 simuls
-Mean   block time(s) Range 149.3-149.8 Mean 149.6 Std Dev 0.1 Median 149.6
-StdDev block time(s) Range 148.8-152.6 Mean 150.7 Std Dev 1.3 Median 151.1
-Median block time(s) Range 102.0-105.0 Mean 103.4 Std Dev 1.2 Median 104.0
-Max    block time(s) Range 1250.0-1956.0 Mean 1490.6 Std Dev 218.9 Median 1438.0
-Algo fdgw3-144,  scenario increase
-Starting seed 1515509110 for 10 simuls
-Mean   block time(s) Range 147.0-147.7 Mean 147.3 Std Dev 0.3 Median 147.4
-StdDev block time(s) Range 146.4-150.7 Mean 148.8 Std Dev 1.4 Median 149.0
-Median block time(s) Range 99.0-102.0 Mean 101.2 Std Dev 1.0 Median 102.0
-Max    block time(s) Range 1337.0-2030.0 Mean 1549.6 Std Dev 192.6 Median 1524.0
-Algo xmr,  scenario increase
-Starting seed 1515509203 for 10 simuls
-Mean   block time(s) Range 301.4-306.9 Mean 304.6 Std Dev 1.6 Median 305.0
-StdDev block time(s) Range 365.5-389.4 Mean 375.3 Std Dev 8.8 Median 375.8
-Median block time(s) Range 182.0-186.0 Mean 183.9 Std Dev 1.4 Median 184.0
-Max    block time(s) Range 3905.0-7766.0 Mean 5656.6 Std Dev 1145.8 Median 5432.0
-Algo cdho,  scenario increase
-Starting seed 1515509205 for 10 simuls
-Mean   block time(s) Range 74.4-76.8 Mean 75.2 Std Dev 0.7 Median 75.1
-StdDev block time(s) Range 73.7-76.5 Mean 74.8 Std Dev 1.1 Median 74.9
-Median block time(s) Range 51.0-54.0 Mean 52.3 Std Dev 0.8 Median 52.0
-Max    block time(s) Range 605.0-842.0 Mean 714.1 Std Dev 71.3 Median 709.0
-Algo pid,  scenario increase
-Starting seed 1515509206 for 10 simuls
-Mean   block time(s) Range 308.1-320.8 Mean 313.1 Std Dev 3.6 Median 312.7
-StdDev block time(s) Range 378.4-417.9 Mean 392.0 Std Dev 12.6 Median 392.1
-Median block time(s) Range 185.0-191.0 Mean 187.4 Std Dev 1.6 Median 188.0
-Max    block time(s) Range 4039.0-7403.0 Mean 5678.8 Std Dev 934.1 Median 5934.0
-Algo sa,  scenario increase
-Starting seed 1515509208 for 10 simuls
-Mean   block time(s) Range 296.2-304.9 Mean 299.6 Std Dev 3.0 Median 299.4
-StdDev block time(s) Range 353.1-384.1 Mean 364.5 Std Dev 11.8 Median 360.2
-Median block time(s) Range 182.0-185.0 Mean 183.1 Std Dev 1.1 Median 183.0
-Max    block time(s) Range 3839.0-8175.0 Mean 5455.8 Std Dev 1327.5 Median 5394.0
-Algo pe,  scenario increase
-Starting seed 1515509210 for 10 simuls
-Mean   block time(s) Range 151.0-151.3 Mean 151.2 Std Dev 0.1 Median 151.2
-StdDev block time(s) Range 154.6-160.7 Mean 157.3 Std Dev 2.0 Median 157.1
-Median block time(s) Range 101.0-104.0 Mean 102.5 Std Dev 1.0 Median 102.0
-Max    block time(s) Range 1381.0-2005.0 Mean 1704.2 Std Dev 175.1 Median 1748.0
-Algo cdgw3-24,  scenario decrease
-Starting seed 1515509215 for 10 simuls
-Mean   block time(s) Range 150.8-151.1 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 149.1-157.0 Mean 152.0 Std Dev 2.2 Median 152.0
-Median block time(s) Range 103.0-106.0 Mean 104.3 Std Dev 1.2 Median 104.0
-Max    block time(s) Range 1231.0-1900.0 Mean 1521.4 Std Dev 195.1 Median 1559.0
-Algo cdgw3-144,  scenario decrease
-Starting seed 1515509235 for 10 simuls
-Mean   block time(s) Range 151.2-151.4 Mean 151.3 Std Dev 0.1 Median 151.3
-StdDev block time(s) Range 156.3-162.2 Mean 158.0 Std Dev 1.8 Median 157.6
-Median block time(s) Range 100.0-103.0 Mean 101.8 Std Dev 0.9 Median 102.0
-Max    block time(s) Range 1378.0-1987.0 Mean 1625.0 Std Dev 216.5 Median 1642.0
-Algo fdgw3-24,  scenario decrease
-Starting seed 1515509240 for 10 simuls
-Mean   block time(s) Range 150.6-151.0 Mean 150.9 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 150.5-154.2 Mean 152.1 Std Dev 1.3 Median 151.6
-Median block time(s) Range 103.0-106.0 Mean 104.7 Std Dev 0.9 Median 105.0
-Max    block time(s) Range 1267.0-1789.0 Mean 1544.7 Std Dev 199.1 Median 1580.0
-Algo fdgw3-144,  scenario decrease
-Starting seed 1515509260 for 10 simuls
-Mean   block time(s) Range 154.3-155.7 Mean 155.1 Std Dev 0.4 Median 155.2
-StdDev block time(s) Range 156.8-163.0 Mean 159.7 Std Dev 2.0 Median 160.4
-Median block time(s) Range 105.0-107.0 Mean 106.1 Std Dev 0.7 Median 106.0
-Max    block time(s) Range 1350.0-2786.0 Mean 1875.6 Std Dev 445.7 Median 1933.0
-Algo xmr,  scenario decrease
-Starting seed 1515509357 for 10 simuls
-Mean   block time(s) Range 298.7-312.5 Mean 306.9 Std Dev 4.2 Median 307.2
-StdDev block time(s) Range 360.5-393.9 Mean 379.6 Std Dev 11.8 Median 385.4
-Median block time(s) Range 182.0-186.0 Mean 184.2 Std Dev 1.1 Median 184.0
-Max    block time(s) Range 4531.0-7198.0 Mean 5808.2 Std Dev 935.5 Median 5730.0
-Algo cdho,  scenario decrease
-Starting seed 1515509359 for 10 simuls
-Mean   block time(s) Range 296.8-303.6 Mean 301.0 Std Dev 1.9 Median 301.5
-StdDev block time(s) Range 298.0-306.3 Mean 302.0 Std Dev 2.7 Median 301.7
-Median block time(s) Range 205.0-214.0 Mean 209.1 Std Dev 2.3 Median 209.0
-Max    block time(s) Range 2588.0-3685.0 Mean 2929.8 Std Dev 311.0 Median 2967.0
-Algo pid,  scenario decrease
-Starting seed 1515509360 for 10 simuls
-Mean   block time(s) Range 304.4-321.9 Mean 313.0 Std Dev 5.1 Median 313.4
-StdDev block time(s) Range 373.6-404.1 Mean 390.5 Std Dev 12.1 Median 398.4
-Median block time(s) Range 184.0-188.0 Mean 186.8 Std Dev 1.2 Median 187.0
-Max    block time(s) Range 4155.0-8391.0 Mean 5624.7 Std Dev 1309.3 Median 5614.0
-Algo sa,  scenario decrease
-Starting seed 1515509362 for 10 simuls
-Mean   block time(s) Range 292.8-306.6 Mean 299.6 Std Dev 4.1 Median 299.5
-StdDev block time(s) Range 344.1-372.4 Mean 360.4 Std Dev 10.8 Median 364.1
-Median block time(s) Range 182.0-185.0 Mean 183.5 Std Dev 1.0 Median 184.0
-Max    block time(s) Range 4103.0-6096.0 Mean 4848.6 Std Dev 780.0 Median 4774.0
-Algo pe,  scenario decrease
-Starting seed 1515509364 for 10 simuls
-Mean   block time(s) Range 151.9-152.2 Mean 152.0 Std Dev 0.1 Median 152.0
-StdDev block time(s) Range 161.6-170.8 Mean 165.5 Std Dev 2.7 Median 165.6
-Median block time(s) Range 98.0-102.0 Mean 99.8 Std Dev 1.5 Median 100.0
-Max    block time(s) Range 1419.0-3203.0 Mean 2037.6 Std Dev 576.3 Median 1913.0
-Algo cdgw3-24,  scenario inout
-Starting seed 1515509369 for 10 simuls
-Mean   block time(s) Range 150.3-150.8 Mean 150.6 Std Dev 0.1 Median 150.6
-StdDev block time(s) Range 167.8-174.4 Mean 171.7 Std Dev 2.2 Median 172.4
-Median block time(s) Range 92.0-95.0 Mean 93.3 Std Dev 0.9 Median 93.0
-Max    block time(s) Range 1624.0-2496.0 Mean 1930.5 Std Dev 265.2 Median 1989.0
-Algo cdgw3-144,  scenario inout
-Starting seed 1515509388 for 10 simuls
-Mean   block time(s) Range 152.2-152.5 Mean 152.3 Std Dev 0.1 Median 152.4
-StdDev block time(s) Range 164.6-170.4 Mean 167.0 Std Dev 1.8 Median 166.7
-Median block time(s) Range 98.0-101.0 Mean 99.7 Std Dev 0.9 Median 100.0
-Max    block time(s) Range 2050.0-2457.0 Mean 2232.2 Std Dev 153.8 Median 2192.0
-Algo fdgw3-24,  scenario inout
-Starting seed 1515509393 for 10 simuls
-Mean   block time(s) Range 150.4-150.8 Mean 150.7 Std Dev 0.1 Median 150.7
-StdDev block time(s) Range 171.3-179.5 Mean 174.1 Std Dev 2.5 Median 173.2
-Median block time(s) Range 91.0-95.0 Mean 93.0 Std Dev 1.4 Median 94.0
-Max    block time(s) Range 1679.0-3216.0 Mean 2121.3 Std Dev 462.8 Median 1945.0
-Algo fdgw3-144,  scenario inout
-Starting seed 1515509412 for 10 simuls
-Mean   block time(s) Range 148.9-149.6 Mean 149.3 Std Dev 0.3 Median 149.4
-StdDev block time(s) Range 162.5-167.8 Mean 165.7 Std Dev 1.8 Median 166.8
-Median block time(s) Range 93.0-98.0 Mean 95.4 Std Dev 1.7 Median 95.0
-Max    block time(s) Range 1752.0-2079.0 Mean 1904.5 Std Dev 100.4 Median 1916.0
-Algo xmr,  scenario inout
-Starting seed 1515509503 for 10 simuls
-Mean   block time(s) Range 307.0-314.7 Mean 311.0 Std Dev 3.0 Median 312.5
-StdDev block time(s) Range 371.4-414.4 Mean 391.9 Std Dev 12.9 Median 392.6
-Median block time(s) Range 183.0-186.0 Mean 184.6 Std Dev 0.8 Median 185.0
-Max    block time(s) Range 4848.0-7368.0 Mean 5930.4 Std Dev 842.4 Median 6088.0
-Algo cdho,  scenario inout
-Starting seed 1515509506 for 10 simuls
-Mean   block time(s) Range 110.7-113.4 Mean 112.2 Std Dev 0.9 Median 112.5
-StdDev block time(s) Range 119.7-126.3 Mean 124.1 Std Dev 2.0 Median 124.8
-Median block time(s) Range 70.0-73.0 Mean 71.9 Std Dev 0.7 Median 72.0
-Max    block time(s) Range 1201.0-1736.0 Mean 1411.2 Std Dev 189.8 Median 1418.0
-Algo pid,  scenario inout
-Starting seed 1515509507 for 10 simuls
-Mean   block time(s) Range 315.7-328.7 Mean 320.7 Std Dev 4.8 Median 321.5
-StdDev block time(s) Range 389.4-428.1 Mean 409.3 Std Dev 12.7 Median 412.5
-Median block time(s) Range 186.0-190.0 Mean 187.9 Std Dev 1.3 Median 188.0
-Max    block time(s) Range 5246.0-7354.0 Mean 6220.7 Std Dev 709.7 Median 5990.0
-Algo sa,  scenario inout
-Starting seed 1515509509 for 10 simuls
-Mean   block time(s) Range 300.4-311.5 Mean 305.2 Std Dev 3.2 Median 305.4
-StdDev block time(s) Range 355.4-390.2 Mean 376.8 Std Dev 10.5 Median 377.7
-Median block time(s) Range 179.0-186.0 Mean 183.6 Std Dev 2.1 Median 184.0
-Max    block time(s) Range 4726.0-6481.0 Mean 5635.7 Std Dev 676.0 Median 5767.0
-Algo pe,  scenario inout
-Starting seed 1516619679 for 10 simuls
-Mean   block time(s) Range 150.9-151.2 Mean 151.0 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 155.1-159.8 Mean 157.6 Std Dev 1.4 Median 157.7
-Median block time(s) Range 101.0-103.0 Mean 101.8 Std Dev 0.9 Median 102.0
-Max    block time(s) Range 1308.0-2033.0 Mean 1606.0 Std Dev 216.4 Median 1635.0
-Algo cdgw3-24,  scenario const
-Starting seed 1516619684 for 10 simuls
-Mean   block time(s) Range 150.1-150.4 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 148.6-152.7 Mean 150.9 Std Dev 1.4 Median 151.7
-Median block time(s) Range 102.0-106.0 Mean 104.2 Std Dev 1.1 Median 104.0
-Max    block time(s) Range 1217.0-1842.0 Mean 1492.0 Std Dev 194.4 Median 1537.0
-Algo cdgw3-144,  scenario const
-Starting seed 1516619703 for 10 simuls
-Mean   block time(s) Range 151.1-151.4 Mean 151.2 Std Dev 0.1 Median 151.3
-StdDev block time(s) Range 155.0-160.9 Mean 157.7 Std Dev 2.0 Median 157.4
-Median block time(s) Range 100.0-104.0 Mean 101.8 Std Dev 1.5 Median 102.0
-Max    block time(s) Range 1468.0-2932.0 Mean 1834.5 Std Dev 419.8 Median 1764.0
-Algo fdgw3-24,  scenario const
-Starting seed 1516619707 for 10 simuls
-Mean   block time(s) Range 150.1-150.4 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 148.3-152.9 Mean 150.7 Std Dev 1.4 Median 150.7
-Median block time(s) Range 102.0-105.0 Mean 103.7 Std Dev 1.1 Median 104.0
-Max    block time(s) Range 1250.0-1892.0 Mean 1585.8 Std Dev 214.9 Median 1581.0
-Algo fdgw3-144,  scenario const
-Starting seed 1516619726 for 10 simuls
-Mean   block time(s) Range 149.9-150.8 Mean 150.4 Std Dev 0.3 Median 150.6
-StdDev block time(s) Range 148.4-153.8 Mean 150.8 Std Dev 1.6 Median 151.0
-Median block time(s) Range 103.0-106.0 Mean 104.6 Std Dev 0.8 Median 105.0
-Max    block time(s) Range 1300.0-1974.0 Mean 1558.0 Std Dev 241.0 Median 1479.0
-Algo xmr,  scenario const
-Starting seed 1516619817 for 10 simuls
-Mean   block time(s) Range 299.7-311.1 Mean 307.3 Std Dev 3.8 Median 308.6
-StdDev block time(s) Range 365.9-403.3 Mean 381.2 Std Dev 10.8 Median 381.7
-Median block time(s) Range 182.0-186.0 Mean 183.7 Std Dev 1.3 Median 184.0
-Max    block time(s) Range 3901.0-8409.0 Mean 6004.7 Std Dev 1460.3 Median 5815.0
-Algo cdho,  scenario const
-Starting seed 1516619819 for 10 simuls
-Mean   block time(s) Range 149.8-150.2 Mean 150.0 Std Dev 0.1 Median 150.1
-StdDev block time(s) Range 149.9-153.7 Mean 152.0 Std Dev 1.2 Median 152.0
-Median block time(s) Range 102.0-104.0 Mean 103.3 Std Dev 0.7 Median 103.0
-Max    block time(s) Range 1304.0-2344.0 Mean 1676.6 Std Dev 304.5 Median 1721.0
-Algo pid,  scenario const
-Starting seed 1516619821 for 10 simuls
-Mean   block time(s) Range 307.6-319.7 Mean 315.4 Std Dev 4.1 Median 316.4
-StdDev block time(s) Range 380.2-404.1 Mean 395.9 Std Dev 7.6 Median 398.8
-Median block time(s) Range 184.0-190.0 Mean 187.2 Std Dev 1.9 Median 187.0
-Max    block time(s) Range 4411.0-11543.0 Mean 6308.7 Std Dev 2103.6 Median 5956.0
-Algo sa,  scenario const
-Starting seed 1516619823 for 10 simuls
-Mean   block time(s) Range 168.0-170.9 Mean 169.2 Std Dev 0.8 Median 169.1
-StdDev block time(s) Range 201.3-212.5 Mean 207.4 Std Dev 3.9 Median 207.4
-Median block time(s) Range 100.0-105.0 Mean 102.2 Std Dev 1.4 Median 102.0
-Max    block time(s) Range 2842.0-4351.0 Mean 3580.3 Std Dev 519.5 Median 3648.0
-Algo pe,  scenario const
-Starting seed 1516619825 for 10 simuls
-Mean   block time(s) Range 151.0-151.3 Mean 151.1 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 156.2-162.7 Mean 159.4 Std Dev 1.9 Median 159.6
-Median block time(s) Range 99.0-103.0 Mean 101.4 Std Dev 1.4 Median 102.0
-Max    block time(s) Range 1510.0-2195.0 Mean 1766.2 Std Dev 209.4 Median 1762.0
-Algo cdgw3-24,  scenario random
-Starting seed 1516619830 for 10 simuls
-Mean   block time(s) Range 149.9-150.3 Mean 150.2 Std Dev 0.1 Median 150.2
-StdDev block time(s) Range 149.1-153.6 Mean 151.6 Std Dev 1.4 Median 151.8
-Median block time(s) Range 101.0-106.0 Mean 103.4 Std Dev 1.4 Median 103.0
-Max    block time(s) Range 1166.0-1734.0 Mean 1487.7 Std Dev 181.2 Median 1501.0
-Algo cdgw3-144,  scenario random
-Starting seed 1516619849 for 10 simuls
-Mean   block time(s) Range 151.1-151.3 Mean 151.2 Std Dev 0.1 Median 151.2
-StdDev block time(s) Range 152.3-160.7 Mean 157.4 Std Dev 2.4 Median 157.8
-Median block time(s) Range 100.0-104.0 Mean 101.9 Std Dev 1.2 Median 102.0
-Max    block time(s) Range 1208.0-2305.0 Mean 1750.5 Std Dev 343.9 Median 1736.0
-Algo fdgw3-24,  scenario random
-Starting seed 1516619853 for 10 simuls
-Mean   block time(s) Range 150.0-150.5 Mean 150.2 Std Dev 0.1 Median 150.1
-StdDev block time(s) Range 149.7-152.6 Mean 150.9 Std Dev 1.0 Median 150.9
-Median block time(s) Range 102.0-105.0 Mean 103.4 Std Dev 0.8 Median 103.0
-Max    block time(s) Range 1318.0-1679.0 Mean 1493.5 Std Dev 117.3 Median 1487.0
-Algo fdgw3-144,  scenario random
-Starting seed 1516619872 for 10 simuls
-Mean   block time(s) Range 150.4-150.8 Mean 150.6 Std Dev 0.2 Median 150.5
-StdDev block time(s) Range 148.8-154.1 Mean 151.7 Std Dev 1.7 Median 151.7
-Median block time(s) Range 102.0-105.0 Mean 104.0 Std Dev 1.1 Median 104.0
-Max    block time(s) Range 1291.0-1760.0 Mean 1498.8 Std Dev 152.1 Median 1505.0
-Algo xmr,  scenario random
-Starting seed 1516619963 for 10 simuls
-Mean   block time(s) Range 297.7-311.5 Mean 307.1 Std Dev 4.1 Median 308.4
-StdDev block time(s) Range 364.8-412.2 Mean 384.0 Std Dev 12.5 Median 382.8
-Median block time(s) Range 183.0-185.0 Mean 183.9 Std Dev 0.6 Median 184.0
-Max    block time(s) Range 4643.0-9305.0 Mean 6502.5 Std Dev 1486.7 Median 6523.0
-Algo cdho,  scenario random
-Starting seed 1516619965 for 10 simuls
-Mean   block time(s) Range 149.8-150.2 Mean 150.0 Std Dev 0.1 Median 150.0
-StdDev block time(s) Range 150.0-153.4 Mean 151.7 Std Dev 1.2 Median 152.3
-Median block time(s) Range 102.0-104.0 Mean 103.4 Std Dev 0.8 Median 104.0
-Max    block time(s) Range 1338.0-2056.0 Mean 1590.7 Std Dev 228.3 Median 1564.0
-Algo pid,  scenario random
-Starting seed 1516619967 for 10 simuls
-Mean   block time(s) Range 305.3-319.8 Mean 313.5 Std Dev 4.2 Median 313.4
-StdDev block time(s) Range 375.6-405.9 Mean 394.4 Std Dev 8.7 Median 395.5
-Median block time(s) Range 185.0-188.0 Mean 186.7 Std Dev 1.1 Median 187.0
-Max    block time(s) Range 5000.0-8184.0 Mean 6561.6 Std Dev 1138.4 Median 6364.0
-Algo sa,  scenario random
-Starting seed 1516619968 for 10 simuls
-Mean   block time(s) Range 167.9-169.9 Mean 169.1 Std Dev 0.7 Median 169.2
-StdDev block time(s) Range 200.8-209.8 Mean 205.6 Std Dev 3.1 Median 205.1
-Median block time(s) Range 101.0-104.0 Mean 102.8 Std Dev 1.1 Median 103.0
-Max    block time(s) Range 2418.0-4262.0 Mean 3142.4 Std Dev 602.8 Median 3232.0
-Algo pe,  scenario random
-Starting seed 1516619971 for 10 simuls
-Mean   block time(s) Range 150.8-151.1 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 156.6-160.1 Mean 158.2 Std Dev 1.1 Median 158.3
-Median block time(s) Range 100.0-103.0 Mean 101.6 Std Dev 0.8 Median 102.0
-Max    block time(s) Range 1467.0-2221.0 Mean 1756.3 Std Dev 227.2 Median 1706.0
-Algo cdgw3-24,  scenario increase
-Starting seed 1516619975 for 10 simuls
-Mean   block time(s) Range 149.4-149.7 Mean 149.5 Std Dev 0.1 Median 149.5
-StdDev block time(s) Range 149.8-152.7 Mean 151.1 Std Dev 1.1 Median 150.9
-Median block time(s) Range 102.0-105.0 Mean 103.1 Std Dev 1.0 Median 103.0
-Max    block time(s) Range 1208.0-1918.0 Mean 1475.2 Std Dev 208.4 Median 1400.0
-Algo cdgw3-144,  scenario increase
-Starting seed 1516619995 for 10 simuls
-Mean   block time(s) Range 151.0-151.3 Mean 151.1 Std Dev 0.1 Median 151.1
-StdDev block time(s) Range 155.1-161.0 Mean 157.6 Std Dev 1.9 Median 158.1
-Median block time(s) Range 100.0-104.0 Mean 101.8 Std Dev 1.2 Median 102.0
-Max    block time(s) Range 1424.0-2098.0 Mean 1669.3 Std Dev 197.1 Median 1666.0
-Algo fdgw3-24,  scenario increase
-Starting seed 1516619999 for 10 simuls
-Mean   block time(s) Range 149.3-149.6 Mean 149.5 Std Dev 0.1 Median 149.5
-StdDev block time(s) Range 147.6-153.9 Mean 151.1 Std Dev 1.8 Median 151.3
-Median block time(s) Range 101.0-104.0 Mean 102.6 Std Dev 0.8 Median 103.0
-Max    block time(s) Range 1149.0-1914.0 Mean 1485.2 Std Dev 291.2 Median 1451.0
-Algo fdgw3-144,  scenario increase
-Starting seed 1516620018 for 10 simuls
-Mean   block time(s) Range 146.9-147.7 Mean 147.4 Std Dev 0.2 Median 147.5
-StdDev block time(s) Range 146.2-151.4 Mean 148.5 Std Dev 1.4 Median 148.5
-Median block time(s) Range 100.0-103.0 Mean 101.1 Std Dev 1.0 Median 101.0
-Max    block time(s) Range 1247.0-1839.0 Mean 1424.7 Std Dev 180.6 Median 1401.0
-Algo xmr,  scenario increase
-Starting seed 1516620109 for 10 simuls
-Mean   block time(s) Range 302.9-314.2 Mean 307.9 Std Dev 3.4 Median 308.5
-StdDev block time(s) Range 368.7-403.8 Mean 384.3 Std Dev 9.8 Median 385.1
-Median block time(s) Range 183.0-187.0 Mean 184.1 Std Dev 1.3 Median 184.0
-Max    block time(s) Range 4004.0-9462.0 Mean 6146.0 Std Dev 1594.6 Median 6063.0
-Algo cdho,  scenario increase
-Starting seed 1516620111 for 10 simuls
-Mean   block time(s) Range 149.6-150.3 Mean 150.0 Std Dev 0.2 Median 150.0
-StdDev block time(s) Range 150.3-155.5 Mean 152.1 Std Dev 1.5 Median 151.8
-Median block time(s) Range 102.0-105.0 Mean 103.4 Std Dev 1.0 Median 104.0
-Max    block time(s) Range 1366.0-2199.0 Mean 1569.0 Std Dev 265.6 Median 1489.0
-Algo pid,  scenario increase
-Starting seed 1516620113 for 10 simuls
-Mean   block time(s) Range 310.3-324.8 Mean 317.6 Std Dev 5.1 Median 317.6
-StdDev block time(s) Range 383.4-423.7 Mean 399.8 Std Dev 12.5 Median 398.5
-Median block time(s) Range 186.0-191.0 Mean 187.4 Std Dev 1.5 Median 187.0
-Max    block time(s) Range 5224.0-10873.0 Mean 6605.2 Std Dev 1650.1 Median 6599.0
-Algo sa,  scenario increase
-Starting seed 1516620115 for 10 simuls
-Mean   block time(s) Range 167.1-169.8 Mean 168.6 Std Dev 1.0 Median 168.9
-StdDev block time(s) Range 195.7-215.9 Mean 203.9 Std Dev 6.1 Median 204.0
+Starting seed 1516709218 for 10 simuls
+Mean   block time(s) Range 151.1-151.3 Mean 151.2 Std Dev 0.1 Median 151.3
+StdDev block time(s) Range 155.7-160.8 Mean 157.7 Std Dev 1.6 Median 157.8
 Median block time(s) Range 100.0-103.0 Mean 101.9 Std Dev 0.9 Median 102.0
-Max    block time(s) Range 2150.0-3744.0 Mean 2740.2 Std Dev 525.3 Median 2526.0
-Algo pe,  scenario increase
-Starting seed 1516620117 for 10 simuls
+Max    block time(s) Range 1415.0-1950.0 Mean 1630.6 Std Dev 165.5 Median 1674.0
+Algo fdgw3-24,  scenario const
+Starting seed 1516709223 for 10 simuls
+Mean   block time(s) Range 150.1-150.3 Mean 150.2 Std Dev 0.1 Median 150.2
+StdDev block time(s) Range 149.8-154.1 Mean 151.7 Std Dev 1.6 Median 151.4
+Median block time(s) Range 102.0-105.0 Mean 103.6 Std Dev 0.8 Median 104.0
+Max    block time(s) Range 1113.0-1708.0 Mean 1395.5 Std Dev 183.1 Median 1443.0
+Algo fdgw3-144,  scenario const
+Starting seed 1516709244 for 10 simuls
+Mean   block time(s) Range 150.4-151.3 Mean 150.7 Std Dev 0.3 Median 150.7
+StdDev block time(s) Range 149.1-152.9 Mean 150.7 Std Dev 1.5 Median 150.2
+Median block time(s) Range 103.0-106.0 Mean 104.2 Std Dev 0.9 Median 104.0
+Max    block time(s) Range 1254.0-1780.0 Mean 1494.9 Std Dev 176.2 Median 1529.0
+Algo xmr,  scenario const
+Starting seed 1516709335 for 10 simuls
+Mean   block time(s) Range 301.4-311.6 Mean 307.6 Std Dev 3.1 Median 306.9
+StdDev block time(s) Range 366.4-389.5 Mean 381.0 Std Dev 8.8 Median 386.1
+Median block time(s) Range 181.0-184.0 Mean 183.3 Std Dev 1.1 Median 184.0
+Max    block time(s) Range 4364.0-10059.0 Mean 6519.0 Std Dev 1961.2 Median 6799.0
+Algo cdho,  scenario const
+Starting seed 1516709338 for 10 simuls
+Mean   block time(s) Range 149.9-150.1 Mean 150.0 Std Dev 0.0 Median 150.0
+StdDev block time(s) Range 160.1-165.2 Mean 162.5 Std Dev 1.8 Median 162.4
+Median block time(s) Range 97.0-100.0 Mean 98.6 Std Dev 0.8 Median 99.0
+Max    block time(s) Range 1514.0-2389.0 Mean 1918.6 Std Dev 264.4 Median 1925.0
+Algo pid,  scenario const
+Starting seed 1516709339 for 10 simuls
+Mean   block time(s) Range 310.1-320.1 Mean 316.5 Std Dev 3.7 Median 318.9
+StdDev block time(s) Range 385.5-431.7 Mean 403.2 Std Dev 13.8 Median 405.5
+Median block time(s) Range 184.0-189.0 Mean 186.8 Std Dev 1.8 Median 187.0
+Max    block time(s) Range 5065.0-11270.0 Mean 7429.1 Std Dev 1797.1 Median 6893.0
+Algo sa,  scenario const
+Starting seed 1516709341 for 10 simuls
+Mean   block time(s) Range 167.9-170.8 Mean 169.1 Std Dev 1.0 Median 169.2
+StdDev block time(s) Range 198.0-214.5 Mean 205.9 Std Dev 5.9 Median 204.0
+Median block time(s) Range 100.0-105.0 Mean 102.4 Std Dev 1.6 Median 102.0
+Max    block time(s) Range 2200.0-4155.0 Mean 3055.1 Std Dev 613.3 Median 3095.0
+Algo pe,  scenario const
+Starting seed 1516709343 for 10 simuls
+Mean   block time(s) Range 151.0-151.2 Mean 151.1 Std Dev 0.1 Median 151.1
+StdDev block time(s) Range 153.9-158.2 Mean 156.7 Std Dev 1.3 Median 157.2
+Median block time(s) Range 100.0-104.0 Mean 102.4 Std Dev 1.5 Median 103.0
+Max    block time(s) Range 1396.0-2336.0 Mean 1825.7 Std Dev 344.1 Median 1871.0
+Algo cdgw3-24,  scenario random
+Starting seed 1516709348 for 10 simuls
+Mean   block time(s) Range 150.0-150.4 Mean 150.2 Std Dev 0.1 Median 150.2
+StdDev block time(s) Range 147.5-152.8 Mean 150.3 Std Dev 1.6 Median 150.5
+Median block time(s) Range 103.0-106.0 Mean 104.3 Std Dev 1.3 Median 104.0
+Max    block time(s) Range 1272.0-2678.0 Mean 1751.1 Std Dev 474.1 Median 1568.0
+Algo cdgw3-144,  scenario random
+Starting seed 1516709367 for 10 simuls
 Mean   block time(s) Range 151.1-151.3 Mean 151.2 Std Dev 0.1 Median 151.2
-StdDev block time(s) Range 155.9-159.3 Mean 158.0 Std Dev 1.2 Median 158.6
-Median block time(s) Range 101.0-103.0 Mean 101.9 Std Dev 0.9 Median 102.0
-Max    block time(s) Range 1367.0-2453.0 Mean 1757.6 Std Dev 326.4 Median 1665.0
+StdDev block time(s) Range 155.8-161.2 Mean 158.5 Std Dev 1.8 Median 158.5
+Median block time(s) Range 100.0-104.0 Mean 101.4 Std Dev 1.4 Median 102.0
+Max    block time(s) Range 1344.0-1916.0 Mean 1672.2 Std Dev 172.3 Median 1663.0
+Algo fdgw3-24,  scenario random
+Starting seed 1516709372 for 10 simuls
+Mean   block time(s) Range 150.1-150.3 Mean 150.2 Std Dev 0.1 Median 150.2
+StdDev block time(s) Range 149.4-154.7 Mean 151.7 Std Dev 1.5 Median 151.9
+Median block time(s) Range 101.0-105.0 Mean 103.2 Std Dev 1.3 Median 103.0
+Max    block time(s) Range 1219.0-1545.0 Mean 1407.4 Std Dev 110.2 Median 1397.0
+Algo fdgw3-144,  scenario random
+Starting seed 1516709391 for 10 simuls
+Mean   block time(s) Range 150.2-151.0 Mean 150.6 Std Dev 0.3 Median 150.5
+StdDev block time(s) Range 148.7-153.0 Mean 151.0 Std Dev 1.4 Median 151.2
+Median block time(s) Range 102.0-107.0 Mean 104.4 Std Dev 1.6 Median 105.0
+Max    block time(s) Range 1243.0-1792.0 Mean 1413.2 Std Dev 155.7 Median 1370.0
+Algo xmr,  scenario random
+Starting seed 1516709482 for 10 simuls
+Mean   block time(s) Range 301.6-314.9 Mean 308.0 Std Dev 4.2 Median 309.7
+StdDev block time(s) Range 357.1-407.9 Mean 385.5 Std Dev 15.1 Median 386.8
+Median block time(s) Range 181.0-185.0 Mean 183.3 Std Dev 1.2 Median 184.0
+Max    block time(s) Range 4522.0-12438.0 Mean 6306.0 Std Dev 2450.3 Median 5484.0
+Algo cdho,  scenario random
+Starting seed 1516709484 for 10 simuls
+Mean   block time(s) Range 149.9-150.0 Mean 150.0 Std Dev 0.0 Median 150.0
+StdDev block time(s) Range 159.5-168.5 Mean 163.7 Std Dev 2.5 Median 164.0
+Median block time(s) Range 97.0-100.0 Mean 98.4 Std Dev 1.1 Median 98.0
+Max    block time(s) Range 1541.0-2543.0 Mean 2021.1 Std Dev 296.6 Median 2082.0
+Algo pid,  scenario random
+Starting seed 1516709486 for 10 simuls
+Mean   block time(s) Range 311.3-323.8 Mean 317.7 Std Dev 3.9 Median 318.5
+StdDev block time(s) Range 389.9-425.3 Mean 403.5 Std Dev 11.6 Median 403.7
+Median block time(s) Range 185.0-189.0 Mean 186.7 Std Dev 1.2 Median 187.0
+Max    block time(s) Range 4404.0-12992.0 Mean 6650.3 Std Dev 2594.3 Median 5911.0
+Algo sa,  scenario random
+Starting seed 1516709488 for 10 simuls
+Mean   block time(s) Range 167.1-170.9 Mean 169.3 Std Dev 1.2 Median 169.2
+StdDev block time(s) Range 195.3-215.4 Mean 206.4 Std Dev 5.9 Median 207.8
+Median block time(s) Range 101.0-103.0 Mean 102.3 Std Dev 0.7 Median 102.0
+Max    block time(s) Range 2375.0-4118.0 Mean 3134.1 Std Dev 613.0 Median 3269.0
+Algo pe,  scenario random
+Starting seed 1516709490 for 10 simuls
+Mean   block time(s) Range 150.9-151.1 Mean 151.0 Std Dev 0.1 Median 151.0
+StdDev block time(s) Range 154.5-162.1 Mean 158.9 Std Dev 2.1 Median 159.5
+Median block time(s) Range 100.0-104.0 Mean 101.5 Std Dev 1.3 Median 101.0
+Max    block time(s) Range 1224.0-2309.0 Mean 1808.7 Std Dev 306.2 Median 1936.0
+Algo cdgw3-24,  scenario increase
+Starting seed 1516709495 for 10 simuls
+Mean   block time(s) Range 149.4-149.8 Mean 149.6 Std Dev 0.1 Median 149.6
+StdDev block time(s) Range 147.7-154.5 Mean 151.1 Std Dev 2.3 Median 151.2
+Median block time(s) Range 99.0-105.0 Mean 103.0 Std Dev 1.6 Median 103.0
+Max    block time(s) Range 1248.0-1692.0 Mean 1473.9 Std Dev 157.2 Median 1554.0
+Algo cdgw3-144,  scenario increase
+Starting seed 1516709514 for 10 simuls
+Mean   block time(s) Range 151.0-151.1 Mean 151.0 Std Dev 0.0 Median 151.0
+StdDev block time(s) Range 154.3-160.6 Mean 157.0 Std Dev 2.2 Median 157.3
+Median block time(s) Range 99.0-104.0 Mean 102.1 Std Dev 1.4 Median 103.0
+Max    block time(s) Range 1532.0-2543.0 Mean 1840.9 Std Dev 381.2 Median 1709.0
+Algo fdgw3-24,  scenario increase
+Starting seed 1516709519 for 10 simuls
+Mean   block time(s) Range 149.3-149.7 Mean 149.5 Std Dev 0.1 Median 149.5
+StdDev block time(s) Range 147.4-154.4 Mean 150.2 Std Dev 2.3 Median 150.8
+Median block time(s) Range 100.0-106.0 Mean 103.1 Std Dev 1.7 Median 103.0
+Max    block time(s) Range 1157.0-1892.0 Mean 1478.2 Std Dev 198.1 Median 1506.0
+Algo fdgw3-144,  scenario increase
+Starting seed 1516709539 for 10 simuls
+Mean   block time(s) Range 146.8-147.7 Mean 147.4 Std Dev 0.3 Median 147.5
+StdDev block time(s) Range 146.0-150.8 Mean 149.2 Std Dev 1.5 Median 149.7
+Median block time(s) Range 99.0-103.0 Mean 100.7 Std Dev 1.4 Median 101.0
+Max    block time(s) Range 1296.0-1831.0 Mean 1496.1 Std Dev 182.4 Median 1495.0
+Algo xmr,  scenario increase
+Starting seed 1516709629 for 10 simuls
+Mean   block time(s) Range 303.8-312.7 Mean 308.8 Std Dev 2.9 Median 309.8
+StdDev block time(s) Range 374.5-402.1 Mean 384.9 Std Dev 9.8 Median 385.2
+Median block time(s) Range 182.0-185.0 Mean 184.0 Std Dev 1.1 Median 184.0
+Max    block time(s) Range 4535.0-9517.0 Mean 6074.9 Std Dev 1479.2 Median 5967.0
+Algo cdho,  scenario increase
+Starting seed 1516709631 for 10 simuls
+Mean   block time(s) Range 149.9-150.1 Mean 150.0 Std Dev 0.1 Median 150.0
+StdDev block time(s) Range 158.8-169.0 Mean 162.8 Std Dev 3.2 Median 162.7
+Median block time(s) Range 96.0-99.0 Mean 98.1 Std Dev 0.9 Median 98.0
+Max    block time(s) Range 1390.0-2599.0 Mean 1919.3 Std Dev 371.8 Median 2038.0
+Algo pid,  scenario increase
+Starting seed 1516709633 for 10 simuls
+Mean   block time(s) Range 311.5-321.6 Mean 315.6 Std Dev 3.0 Median 315.9
+StdDev block time(s) Range 386.6-412.5 Mean 397.1 Std Dev 7.5 Median 398.4
+Median block time(s) Range 184.0-190.0 Mean 187.1 Std Dev 1.8 Median 188.0
+Max    block time(s) Range 4610.0-7860.0 Mean 6253.4 Std Dev 1035.3 Median 6196.0
+Algo sa,  scenario increase
+Starting seed 1516709634 for 10 simuls
+Mean   block time(s) Range 167.4-170.8 Mean 169.2 Std Dev 1.0 Median 169.4
+StdDev block time(s) Range 198.4-215.6 Mean 205.4 Std Dev 5.7 Median 204.4
+Median block time(s) Range 101.0-103.0 Mean 102.1 Std Dev 0.7 Median 102.0
+Max    block time(s) Range 2588.0-5326.0 Mean 3448.5 Std Dev 765.0 Median 3330.0
+Algo pe,  scenario increase
+Starting seed 1516709636 for 10 simuls
+Mean   block time(s) Range 151.1-151.3 Mean 151.2 Std Dev 0.1 Median 151.2
+StdDev block time(s) Range 154.7-161.7 Mean 158.1 Std Dev 2.3 Median 158.0
+Median block time(s) Range 99.0-103.0 Mean 101.4 Std Dev 1.2 Median 102.0
+Max    block time(s) Range 1589.0-1952.0 Mean 1717.5 Std Dev 118.9 Median 1703.0
 Algo cdgw3-24,  scenario decrease
-Starting seed 1516620121 for 10 simuls
-Mean   block time(s) Range 150.8-151.2 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 150.2-155.0 Mean 152.9 Std Dev 1.3 Median 153.4
-Median block time(s) Range 102.0-105.0 Mean 103.8 Std Dev 1.0 Median 104.0
-Max    block time(s) Range 1367.0-2178.0 Mean 1580.1 Std Dev 233.2 Median 1556.0
+Starting seed 1516709641 for 10 simuls
+Mean   block time(s) Range 150.8-151.2 Mean 151.0 Std Dev 0.1 Median 151.1
+StdDev block time(s) Range 148.9-155.5 Mean 152.2 Std Dev 2.0 Median 152.3
+Median block time(s) Range 102.0-105.0 Mean 103.9 Std Dev 1.2 Median 104.0
+Max    block time(s) Range 1234.0-1578.0 Mean 1381.8 Std Dev 110.9 Median 1408.0
 Algo cdgw3-144,  scenario decrease
-Starting seed 1516620141 for 10 simuls
-Mean   block time(s) Range 151.2-151.5 Mean 151.3 Std Dev 0.1 Median 151.4
-StdDev block time(s) Range 156.0-161.2 Mean 158.9 Std Dev 1.4 Median 159.1
-Median block time(s) Range 101.0-103.0 Mean 101.8 Std Dev 0.8 Median 102.0
-Max    block time(s) Range 1320.0-2194.0 Mean 1762.2 Std Dev 254.7 Median 1825.0
+Starting seed 1516709661 for 10 simuls
+Mean   block time(s) Range 151.3-151.5 Mean 151.3 Std Dev 0.1 Median 151.3
+StdDev block time(s) Range 154.8-158.9 Mean 157.4 Std Dev 1.5 Median 158.1
+Median block time(s) Range 101.0-104.0 Mean 102.1 Std Dev 1.1 Median 102.0
+Max    block time(s) Range 1475.0-2031.0 Mean 1716.5 Std Dev 201.0 Median 1776.0
 Algo fdgw3-24,  scenario decrease
-Starting seed 1516620145 for 10 simuls
-Mean   block time(s) Range 150.8-151.1 Mean 151.0 Std Dev 0.1 Median 151.0
-StdDev block time(s) Range 150.1-155.4 Mean 153.0 Std Dev 1.5 Median 153.2
-Median block time(s) Range 103.0-106.0 Mean 104.0 Std Dev 0.9 Median 104.0
-Max    block time(s) Range 1315.0-2478.0 Mean 1745.1 Std Dev 388.0 Median 1636.0
+Starting seed 1516709665 for 10 simuls
+Mean   block time(s) Range 150.8-151.2 Mean 151.0 Std Dev 0.1 Median 151.0
+StdDev block time(s) Range 151.0-154.2 Mean 152.7 Std Dev 1.0 Median 152.8
+Median block time(s) Range 102.0-105.0 Mean 103.3 Std Dev 1.1 Median 103.0
+Max    block time(s) Range 1270.0-2077.0 Mean 1639.1 Std Dev 271.9 Median 1639.0
 Algo fdgw3-144,  scenario decrease
-Starting seed 1516620164 for 10 simuls
-Mean   block time(s) Range 154.8-155.4 Mean 155.1 Std Dev 0.2 Median 155.1
-StdDev block time(s) Range 157.1-161.3 Mean 159.2 Std Dev 1.5 Median 159.6
-Median block time(s) Range 105.0-109.0 Mean 106.1 Std Dev 1.4 Median 106.0
-Max    block time(s) Range 1479.0-2272.0 Mean 1847.7 Std Dev 285.5 Median 1917.0
+Starting seed 1516709684 for 10 simuls
+Mean   block time(s) Range 154.8-155.4 Mean 155.2 Std Dev 0.2 Median 155.3
+StdDev block time(s) Range 156.1-161.5 Mean 159.7 Std Dev 1.9 Median 160.5
+Median block time(s) Range 105.0-107.0 Mean 106.3 Std Dev 0.8 Median 107.0
+Max    block time(s) Range 1485.0-2408.0 Mean 1954.8 Std Dev 284.2 Median 1983.0
 Algo xmr,  scenario decrease
-Starting seed 1516620254 for 10 simuls
-Mean   block time(s) Range 301.4-312.9 Mean 307.0 Std Dev 4.1 Median 308.0
-StdDev block time(s) Range 358.7-401.7 Mean 380.4 Std Dev 12.6 Median 379.1
-Median block time(s) Range 182.0-186.0 Mean 184.1 Std Dev 1.1 Median 184.0
-Max    block time(s) Range 4215.0-7541.0 Mean 5970.7 Std Dev 982.9 Median 5800.0
+Starting seed 1516709775 for 10 simuls
+Mean   block time(s) Range 302.7-319.6 Mean 308.9 Std Dev 5.5 Median 307.4
+StdDev block time(s) Range 369.8-408.5 Mean 385.6 Std Dev 12.6 Median 384.2
+Median block time(s) Range 182.0-187.0 Mean 184.5 Std Dev 1.6 Median 185.0
+Max    block time(s) Range 4096.0-7735.0 Mean 6113.5 Std Dev 1040.7 Median 6231.0
 Algo cdho,  scenario decrease
-Starting seed 1516620256 for 10 simuls
-Mean   block time(s) Range 149.7-150.3 Mean 150.0 Std Dev 0.2 Median 150.1
-StdDev block time(s) Range 147.9-154.6 Mean 151.2 Std Dev 1.9 Median 150.9
-Median block time(s) Range 102.0-105.0 Mean 103.6 Std Dev 1.2 Median 104.0
-Max    block time(s) Range 1152.0-1542.0 Mean 1387.1 Std Dev 136.6 Median 1417.0
+Starting seed 1516709777 for 10 simuls
+Mean   block time(s) Range 149.9-150.1 Mean 150.0 Std Dev 0.0 Median 150.0
+StdDev block time(s) Range 161.1-166.3 Mean 163.9 Std Dev 1.8 Median 164.4
+Median block time(s) Range 97.0-100.0 Mean 97.9 Std Dev 0.9 Median 98.0
+Max    block time(s) Range 1698.0-3050.0 Mean 2086.1 Std Dev 393.3 Median 2125.0
 Algo pid,  scenario decrease
-Starting seed 1516620258 for 10 simuls
-Mean   block time(s) Range 306.9-323.2 Mean 314.0 Std Dev 5.1 Median 315.3
-StdDev block time(s) Range 369.0-411.5 Mean 390.8 Std Dev 13.7 Median 393.4
-Median block time(s) Range 185.0-188.0 Mean 186.6 Std Dev 0.8 Median 187.0
-Max    block time(s) Range 4343.0-6975.0 Mean 5654.3 Std Dev 878.3 Median 5841.0
+Starting seed 1516709779 for 10 simuls
+Mean   block time(s) Range 309.2-327.3 Mean 316.0 Std Dev 6.0 Median 315.0
+StdDev block time(s) Range 380.4-427.6 Mean 396.4 Std Dev 14.3 Median 394.2
+Median block time(s) Range 184.0-190.0 Mean 187.0 Std Dev 1.8 Median 187.0
+Max    block time(s) Range 5356.0-8582.0 Mean 6549.4 Std Dev 1021.4 Median 6741.0
 Algo sa,  scenario decrease
-Starting seed 1516620260 for 10 simuls
-Mean   block time(s) Range 167.8-170.3 Mean 168.9 Std Dev 0.8 Median 168.7
-StdDev block time(s) Range 199.5-212.1 Mean 204.4 Std Dev 4.3 Median 204.4
-Median block time(s) Range 100.0-104.0 Mean 102.3 Std Dev 1.1 Median 102.0
-Max    block time(s) Range 2226.0-5126.0 Mean 3055.7 Std Dev 952.2 Median 2871.0
+Starting seed 1516709780 for 10 simuls
+Mean   block time(s) Range 168.0-171.0 Mean 169.4 Std Dev 1.1 Median 169.1
+StdDev block time(s) Range 200.5-227.1 Mean 208.9 Std Dev 7.6 Median 209.5
+Median block time(s) Range 101.0-104.0 Mean 102.4 Std Dev 1.1 Median 102.0
+Max    block time(s) Range 2586.0-7037.0 Mean 3455.9 Std Dev 1305.3 Median 3195.0
 Algo pe,  scenario decrease
-Starting seed 1516620262 for 10 simuls
-Mean   block time(s) Range 151.8-152.2 Mean 152.0 Std Dev 0.1 Median 152.1
-StdDev block time(s) Range 163.3-170.0 Mean 166.1 Std Dev 2.2 Median 166.1
-Median block time(s) Range 98.0-100.0 Mean 99.4 Std Dev 0.7 Median 100.0
-Max    block time(s) Range 1746.0-3760.0 Mean 2220.3 Std Dev 585.8 Median 2097.0
+Starting seed 1516709782 for 10 simuls
+Mean   block time(s) Range 151.9-152.2 Mean 152.1 Std Dev 0.1 Median 152.1
+StdDev block time(s) Range 163.7-169.1 Mean 166.1 Std Dev 1.7 Median 166.3
+Median block time(s) Range 98.0-101.0 Mean 99.3 Std Dev 0.8 Median 99.0
+Max    block time(s) Range 1720.0-2346.0 Mean 1909.4 Std Dev 186.1 Median 1851.0
 Algo cdgw3-24,  scenario inout
-Starting seed 1516620267 for 10 simuls
-Mean   block time(s) Range 150.4-150.7 Mean 150.6 Std Dev 0.1 Median 150.5
-StdDev block time(s) Range 171.2-178.0 Mean 174.1 Std Dev 2.3 Median 174.5
-Median block time(s) Range 92.0-94.0 Mean 93.1 Std Dev 0.9 Median 93.0
-Max    block time(s) Range 1540.0-2645.0 Mean 1912.1 Std Dev 355.8 Median 1860.0
+Starting seed 1516709787 for 10 simuls
+Mean   block time(s) Range 150.5-150.9 Mean 150.6 Std Dev 0.1 Median 150.5
+StdDev block time(s) Range 169.9-179.9 Mean 173.9 Std Dev 3.0 Median 173.7
+Median block time(s) Range 91.0-94.0 Mean 92.5 Std Dev 1.0 Median 92.0
+Max    block time(s) Range 1754.0-2330.0 Mean 1977.8 Std Dev 205.4 Median 2019.0
 Algo cdgw3-144,  scenario inout
-Starting seed 1516620286 for 10 simuls
-Mean   block time(s) Range 152.0-152.5 Mean 152.3 Std Dev 0.2 Median 152.3
-StdDev block time(s) Range 163.2-167.2 Mean 165.9 Std Dev 1.3 Median 166.6
-Median block time(s) Range 98.0-101.0 Mean 99.3 Std Dev 0.9 Median 99.0
-Max    block time(s) Range 1715.0-2151.0 Mean 1915.8 Std Dev 160.4 Median 1936.0
+Starting seed 1516709806 for 10 simuls
+Mean   block time(s) Range 151.9-152.4 Mean 152.2 Std Dev 0.1 Median 152.3
+StdDev block time(s) Range 159.7-169.5 Mean 165.0 Std Dev 2.9 Median 165.7
+Median block time(s) Range 99.0-101.0 Mean 99.7 Std Dev 0.7 Median 100.0
+Max    block time(s) Range 1655.0-2647.0 Mean 2117.2 Std Dev 258.9 Median 2138.0
 Algo fdgw3-24,  scenario inout
-Starting seed 1516620291 for 10 simuls
-Mean   block time(s) Range 150.4-150.8 Mean 150.6 Std Dev 0.1 Median 150.7
-StdDev block time(s) Range 166.2-177.4 Mean 173.2 Std Dev 3.2 Median 174.8
-Median block time(s) Range 91.0-96.0 Mean 93.5 Std Dev 1.5 Median 93.0
-Max    block time(s) Range 1411.0-2697.0 Mean 1999.1 Std Dev 395.1 Median 1884.0
+Starting seed 1516709811 for 10 simuls
+Mean   block time(s) Range 150.5-150.7 Mean 150.6 Std Dev 0.1 Median 150.6
+StdDev block time(s) Range 166.7-178.3 Mean 172.0 Std Dev 3.2 Median 171.5
+Median block time(s) Range 92.0-96.0 Mean 93.9 Std Dev 1.4 Median 94.0
+Max    block time(s) Range 1452.0-2974.0 Mean 1856.3 Std Dev 449.8 Median 1786.0
 Algo fdgw3-144,  scenario inout
-Starting seed 1516620310 for 10 simuls
-Mean   block time(s) Range 148.7-149.6 Mean 149.1 Std Dev 0.3 Median 149.2
-StdDev block time(s) Range 160.6-169.2 Mean 164.9 Std Dev 2.3 Median 165.1
-Median block time(s) Range 95.0-98.0 Mean 95.8 Std Dev 1.0 Median 96.0
-Max    block time(s) Range 1574.0-2083.0 Mean 1803.0 Std Dev 160.1 Median 1802.0
+Starting seed 1516709830 for 10 simuls
+Mean   block time(s) Range 148.8-149.4 Mean 149.1 Std Dev 0.2 Median 149.1
+StdDev block time(s) Range 164.4-166.9 Mean 165.4 Std Dev 1.0 Median 165.3
+Median block time(s) Range 93.0-98.0 Mean 95.9 Std Dev 1.5 Median 96.0
+Max    block time(s) Range 1524.0-2434.0 Mean 1867.1 Std Dev 271.3 Median 1905.0
 Algo xmr,  scenario inout
-Starting seed 1516620400 for 10 simuls
-Mean   block time(s) Range 309.2-319.7 Mean 313.4 Std Dev 2.9 Median 313.7
-StdDev block time(s) Range 389.0-429.4 Mean 398.3 Std Dev 12.3 Median 394.4
-Median block time(s) Range 182.0-187.0 Mean 184.0 Std Dev 1.5 Median 184.0
-Max    block time(s) Range 4858.0-7733.0 Mean 6378.7 Std Dev 930.3 Median 6163.0
+Starting seed 1516709920 for 10 simuls
+Mean   block time(s) Range 304.8-319.7 Mean 311.6 Std Dev 4.6 Median 311.4
+StdDev block time(s) Range 364.4-411.8 Mean 390.9 Std Dev 13.8 Median 393.8
+Median block time(s) Range 182.0-184.0 Mean 183.4 Std Dev 0.7 Median 184.0
+Max    block time(s) Range 4121.0-7220.0 Mean 5718.5 Std Dev 1184.9 Median 5774.0
 Algo cdho,  scenario inout
-Starting seed 1516620402 for 10 simuls
-Mean   block time(s) Range 149.8-150.1 Mean 150.0 Std Dev 0.1 Median 150.0
-StdDev block time(s) Range 167.0-172.6 Mean 169.6 Std Dev 1.8 Median 169.3
-Median block time(s) Range 92.0-96.0 Mean 94.4 Std Dev 1.5 Median 95.0
-Max    block time(s) Range 1599.0-2452.0 Mean 1930.5 Std Dev 280.0 Median 1971.0
+Starting seed 1516709922 for 10 simuls
+Mean   block time(s) Range 149.9-150.1 Mean 150.0 Std Dev 0.0 Median 150.0
+StdDev block time(s) Range 164.9-172.5 Mean 168.5 Std Dev 2.8 Median 169.6
+Median block time(s) Range 95.0-97.0 Mean 96.3 Std Dev 0.7 Median 96.0
+Max    block time(s) Range 1578.0-3510.0 Mean 2218.7 Std Dev 595.1 Median 2208.0
 Algo pid,  scenario inout
-Starting seed 1516620404 for 10 simuls
-Mean   block time(s) Range 309.4-327.0 Mean 319.5 Std Dev 5.6 Median 321.0
-StdDev block time(s) Range 387.8-442.3 Mean 411.7 Std Dev 15.2 Median 415.5
-Median block time(s) Range 184.0-191.0 Mean 186.8 Std Dev 2.3 Median 186.0
-Max    block time(s) Range 5360.0-7387.0 Mean 6470.5 Std Dev 795.0 Median 6791.0
+Starting seed 1516709924 for 10 simuls
+Mean   block time(s) Range 311.4-323.4 Mean 319.1 Std Dev 4.6 Median 321.9
+StdDev block time(s) Range 378.9-429.9 Mean 406.8 Std Dev 14.1 Median 409.7
+Median block time(s) Range 186.0-189.0 Mean 187.5 Std Dev 1.3 Median 188.0
+Max    block time(s) Range 4657.0-11848.0 Mean 7194.5 Std Dev 1962.4 Median 7113.0
 Algo sa,  scenario inout
-Starting seed 1516620406 for 10 simuls
-Mean   block time(s) Range 169.4-173.9 Mean 171.2 Std Dev 1.2 Median 170.9
-StdDev block time(s) Range 205.5-233.1 Mean 215.9 Std Dev 7.2 Median 215.4
-Median block time(s) Range 99.0-102.0 Mean 101.0 Std Dev 1.1 Median 101.0
-Max    block time(s) Range 2789.0-4023.0 Mean 3553.6 Std Dev 428.8 Median 3682.0
+Starting seed 1516709926 for 10 simuls
+Mean   block time(s) Range 170.0-171.9 Mean 171.1 Std Dev 0.7 Median 171.3
+StdDev block time(s) Range 203.4-217.7 Mean 213.0 Std Dev 5.2 Median 215.3
+Median block time(s) Range 101.0-104.0 Mean 101.8 Std Dev 1.0 Median 102.0
+Max    block time(s) Range 2383.0-4805.0 Mean 3329.2 Std Dev 849.6 Median 3128.0
 Algo pe,  scenario inout

@@ -76,9 +76,6 @@ State = namedtuple('State', 'height wall_time timestamp bits chainwork '
 states = []
 
 
-integral = 0
-
-
 def print_headers():
     print(', '.join(['Height', 'Block Time', 'Unix', 'Timestamp',
                      'Difficulty (bn)', 'Implied Difficulty (bn)',
@@ -462,12 +459,26 @@ def next_bits_cdho(msg):
     return target_to_bits(result_target)
 
 
+pid_proportional_gain = 100.0
+pid_integral_gain = 5.0
+pid_diffirential_gain = 10.0
+
+integral_step_weight = 1.0
+control_weight = 0.001
+
+pid_integral_error = 0
+
+
 def next_bits_pid(msg):
-    global integral
-    proportional = ((states[-1].timestamp - states[-2].timestamp) - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
-    integral = integral + proportional
-    c = 100 * proportional + integral
-    k = 1 + c * 0.0001
+    global pid_integral_error
+    space_error = ((states[-1].timestamp - states[-2].timestamp) - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
+    prev_space_error = ((states[-2].timestamp - states[-3].timestamp) - TARGET_BLOCK_TIME) / TARGET_BLOCK_TIME
+    error_rate = space_error - prev_space_error
+    pid_integral_error = pid_integral_error + integral_step_weight * space_error
+    control = pid_proportional_gain * space_error + \
+        pid_integral_gain * pid_integral_error + \
+        pid_diffirential_gain * error_rate
+    k = 1 + control * control_weight
     prev_target = bits_to_target(states[-1].bits)
     result_target = int(prev_target * k)
     if result_target > MAX_TARGET:
