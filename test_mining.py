@@ -297,9 +297,9 @@ def next_bits_cdho(msg):
     return target_to_bits(result_target)
 
 
-pid_proportional_gain = 100.0
-pid_integral_gain = 5.0
-pid_diffirential_gain = 10.0
+pid_proportional_gain = 9.0
+pid_integral_gain = 1.0
+pid_diffirential_gain = 1.0
 
 integral_step_weight = 1.0
 control_weight = 0.001
@@ -319,6 +319,10 @@ def next_bits_pid(msg):
         pid_integral_gain * pid_integral_error + \
         pid_diffirential_gain * error_rate
     k = 1 + control * control_weight
+    if k < 0.7:
+        k = 0.7
+    if k > 1.5:
+        k = 1.5
     prev_target = bits_to_target(states[-1].bits)
     result_target = int(prev_target * k)
     if result_target > MAX_TARGET:
@@ -523,6 +527,61 @@ def check_random_times():
     print("std_dev=%f" % statistics.stdev(times))
     print("median = %f" % (sorted(times)[len(times) // 2]))
     print("max = %f" % max(times))
+
+
+def pid_tuning():
+    global pid_proportional_gain
+    global pid_integral_gain
+    global pid_diffirential_gain
+    r = 10
+    best_i_mean = best_i_dev = best_i_med = best_i_max = 0
+    best_j_mean = best_j_dev = best_j_med = best_j_max = 0
+    best_k_mean = best_k_dev = best_k_med = best_k_max = 0
+    best_mean = 100000.0
+    best_stddev = 100000.0
+    best_med = 100000.0
+    best_max = 100000.0
+    for i in range(1, r):
+        for j in range(0, r):
+            for k in range(0, r):
+                pid_proportional_gain = i
+                pid_integral_gain = j
+                pid_diffirential_gain = k
+                block_times = run_one_simul(Algos.get('pid'),
+                                            Scenarios.get('const'), False)
+                mean = statistics.mean(block_times)
+                stddev = statistics.stdev(block_times)
+                med = sorted(block_times)[len(block_times) // 2]
+                maxval = max(block_times)
+                if abs(mean - TARGET_BLOCK_TIME) < abs(best_mean - TARGET_BLOCK_TIME):
+                    best_mean = mean
+                    best_i_mean = i
+                    best_j_mean = j
+                    best_k_mean = k
+                if stddev < best_stddev:
+                    best_stddev = stddev
+                    best_i_dev = i
+                    best_j_dev = j
+                    best_k_dev = k
+                if abs(med - TARGET_BLOCK_TIME) < abs(best_med - TARGET_BLOCK_TIME):
+                    best_med = med
+                    best_i_med = i
+                    best_j_med = j
+                    best_k_med = k
+                if abs(maxval - TARGET_BLOCK_TIME) < abs(best_max - TARGET_BLOCK_TIME):
+                    best_max = maxval
+                    best_i_max = i
+                    best_j_max = j
+                    best_k_max = k
+                print("%d %d %d %f %f %f %f" % (i,  j, k, mean,
+                                                stddev,
+                                                med,
+                                                maxval))
+
+    print("Best mean: %d %d %d" % (best_i_mean, best_j_mean, best_k_mean))
+    print("Best dev: %d %d %d" % (best_i_dev, best_j_dev, best_k_dev))
+    print("Best median: %d %d %d" % (best_i_med, best_j_med, best_k_med))
+    print("Best max: %d %d %d" % (best_i_max, best_j_max, best_k_max))
 
 
 def main():
