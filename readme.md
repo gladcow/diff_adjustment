@@ -30,3 +30,21 @@ Available scenarios:
    * 'decrease': decrease network hashrate to given value (0.5 x initial)
    * 'inout': some part of the whole network is in and out periodically
 
+Conclusion:
+    There is no valuable difference between this methods in different scenarios.
+    PID-based control theory is not effective here because of the big error in
+    "position detection" (we can "calculate" real current hashrate only from
+    block times which is random with distribution that has a max at correct value
+    but with big enough standard deviation). It is possible that stochastic control
+    theory can be used, but I've failed to find good solution.
+
+    About the errors in original dgw implementation (incorrect average calculation
+    and one period lost in proportion): it doesn't allow timewrap attack (all values
+    participates in difficulty calculation, result difficulty is smaller than it
+    should be, but this error is compensated with feedback after the future time block
+    timestamp become smaller,  so it is cause small shift from target block time,
+    but this shift is much smaller than standard deviation of the random block time
+    (it is approximately 1/24 part of the standard deviation), so there is no practical
+    difference between current and fixed variant (we can see this in tests too).
+    Fixing current algo requires hardfork, so it is better to leave it in current
+    implementation.
